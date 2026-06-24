@@ -179,8 +179,16 @@
       "bases:Create new base": false
     }
   },
-  "active": "6cc684150748dcea",
+  "active": "66c44b6fc6eb7a44",
   "lastOpenFiles": [
+    "CLAUDE.md.tmp.57728.fa90a2ef9d83",
+    "docs/_handoff/HANDOFF_duplicate-appdev-folders.md",
+    "docs/_handoff/HANDOFF_duplicate-appdev-folders.md.tmp.57001.7a4082796694",
+    "docs/_handoff",
+    "wiki/strategy/Paid Promotion.md.tmp.55881.d5f2e94412dd",
+    "CLAUDE.md.tmp.55362.ed92d43389aa",
+    "docs/_audit/BRAIN_AUDIT.md",
+    "BRAIN_AUDIT.md",
     "wiki/content/Creative Production.md",
     "wiki/strategy/Paid Promotion.md",
     "raw/brain-v1/10D_CREATIVE_PRODUCTION.md",
@@ -200,7 +208,6 @@
     "studyrise-core.css",
     "studyrise-chrome.js",
     "CLAUDE.md",
-    "wiki/index.md.tmp.45573.73eaaafa1787",
     "wiki/app-dev/Feature Flags Registry.md",
     "wiki/app-dev/Component Architecture.md",
     "wiki/app-dev/Migration & Schema History.md",
@@ -209,13 +216,6 @@
     "wiki/strategy/Motion & Animation.md",
     "2026-06-24.md",
     "docs/seo_content_brain/05_CONTENT_PIPELINE.md",
-    "docs/seo_content_brain/01_CONTEXT.md",
-    "Welcome.md",
-    "Welcome.md.tmp.43575.e521805876ad",
-    "wiki/app-dev/Deployment Architecture.md",
-    "wiki/app-dev/App Features Spec.md",
-    "wiki/app-dev/MBBS Build Log.md",
-    "wiki/strategy/Site Shell System.md.tmp.43575.54c52b673255",
-    "wiki/strategy"
+    "docs/seo_content_brain/01_CONTEXT.md"
   ]
 }

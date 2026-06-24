@@ -133,22 +133,4 @@ Check what's connected before assuming a capability is missing. Search for the t
 
 ---
 <!-- docnav-related -->
-### Related docs
-- [02 · BRAND VOICE — How StudyRise Sounds in Writing](02_BRAND_VOICE.md)
-- [03 · SEO STRATEGY — What to Make and Why](03_SEO_STRATEGY.md)
-- [04 · SEO TECHNICAL RULES — Non-Negotiables for Every HTML File](04_SEO_TECHNICAL_RULES.md)
-- [05 · CONTENT PIPELINE — The Master Queue](05_CONTENT_PIPELINE.md)
-- [06 · PRODUCTION PLAYBOOK — How to Make One Article, End to End](06_PRODUCTION_PLAYBOOK.md)
-- [07 · IMAGE PROTOCOL — The Locked Image Rules](07_IMAGE_PROTOCOL.md)
-- [08 · DEPLOYMENT GUIDE — Delivering the Finished File](08_DEPLOYMENT_GUIDE.md)
-- [09 · AUDIT PLAYBOOK — Periodic SEO Health Checks](09_AUDIT_PLAYBOOK.md)
-- [10 · SITE SHELL — The Shared Frame Every Page Wears](10_SITE_SHELL.md)
-- [11 · PRICING MODEL — Tiers, Copy Rules, and the Pricing Page Spec](11_PRICING_MODEL.md)
-- [12 · INTERNAL LINKS — Site Map & Internal Link Registry](12_INTERNAL_LINKS.md)
-- [Blog Page Animation & Motion Guide](BLOG_ANIMATIONS_GUIDE.md)
-- [Brand Kit → moved (de-duplicated)](BRAND_KIT.md)
-- [Design Prompts → moved (de-duplicated)](DESIGN_PROMPTS.md)
-- [StudyRise — Static Page Motion Guide](MOTION_GUIDE.md)
-- [README — How to Use the StudyRise Content & SEO Brain](README.md)
-
-_Up: [docs index](../README.md) · [CLAUDE.md](../../CLAUDE.md)_
+_See the [index](../README.md) for the full file map · [CLAUDE.md](../../CLAUDE.md)_

@@ -469,16 +469,4 @@ This file is the foundation. The following files build on it:
 ---
 
 <!-- docnav-related -->
-### Related docs
-- [01 · CONTEXT — Read This First, Every Time](01_CONTEXT.md)
-- [02 · BRAND VOICE — How StudyRise Sounds in Writing](02_BRAND_VOICE.md)
-- [03 · SEO STRATEGY — What to Make and Why](03_SEO_STRATEGY.md)
-- [05 · CONTENT PIPELINE — The Master Queue](05_CONTENT_PIPELINE.md)
-- [07 · IMAGE PROTOCOL — The Locked Image Rules](07_IMAGE_PROTOCOL.md)
-- [11 · PRICING MODEL — Tiers, Copy Rules, and CTAs](11_PRICING_MODEL.md)
-- [10A · SOCIAL CONTENT FORMATS — Post Templates](10A_SOCIAL_CONTENT_FORMATS.md)
-- [10B · SOCIAL CALENDAR — Schedule and Triggers](10B_SOCIAL_CALENDAR.md)
-- [10C · PAID PROMOTION — Advertising Playbook](10C_PAID_PROMOTION.md)
-- [10D · CREATIVE PRODUCTION — Image and Video Scripts](10D_CREATIVE_PRODUCTION.md)
-
-_Up: [docs index](../README.md) · [CLAUDE.md](../../CLAUDE.md)_
+_See the [index](../README.md) for the full file map · [CLAUDE.md](../../CLAUDE.md)_

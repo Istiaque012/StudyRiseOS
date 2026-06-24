@@ -170,13 +170,4 @@ Parked (do NOT do yet): Homepage→`/features` (H1) until `/features` returns 20
 
 ---
 <!-- docnav-related -->
-### Related docs
-- [01 · CONTEXT — Read This First, Every Time](01_CONTEXT.md)
-- [03 · SEO STRATEGY — What to Make and Why](03_SEO_STRATEGY.md)
-- [05 · CONTENT PIPELINE — The Master Queue](05_CONTENT_PIPELINE.md)
-- [06 · PRODUCTION PLAYBOOK — How to Make One Article, End to End](06_PRODUCTION_PLAYBOOK.md)
-- [08 · DEPLOYMENT GUIDE — Delivering the Finished File](08_DEPLOYMENT_GUIDE.md)
-- [09 · AUDIT PLAYBOOK — Periodic SEO Health Checks](09_AUDIT_PLAYBOOK.md)
-- [10 · SITE SHELL — The Shared Frame Every Page Wears](10_SITE_SHELL.md)
-
-_Up: [docs index](../README.md) · [CLAUDE.md](../../CLAUDE.md)_
+_See the [index](../README.md) for the full file map · [CLAUDE.md](../../CLAUDE.md)_

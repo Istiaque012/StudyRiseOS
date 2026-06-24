@@ -624,14 +624,4 @@ Run through this before posting. Every item.
 ---
 
 <!-- docnav-related -->
-### Related docs
-- [10 · SOCIAL PLAYBOOK — The Operating System](10_SOCIAL_PLAYBOOK.md)
-- [10A · SOCIAL CONTENT FORMATS — Post Templates](10A_SOCIAL_CONTENT_FORMATS.md)
-- [10B · SOCIAL CALENDAR — Schedule and Triggers](10B_SOCIAL_CALENDAR.md)
-- [10C · PAID PROMOTION — Advertising Playbook](10C_PAID_PROMOTION.md)
-- [02 · BRAND VOICE — How StudyRise Sounds in Writing](02_BRAND_VOICE.md)
-- [07 · IMAGE PROTOCOL — The Locked Image Rules](07_IMAGE_PROTOCOL.md)
-- [11 · PRICING MODEL — Tiers, Copy Rules, and CTAs](11_PRICING_MODEL.md)
-- Brand Kit v2.2 (colours, typography, logo system)
-
-_Up: [docs index](../README.md) · [CLAUDE.md](../../CLAUDE.md)_
+_See the [index](../README.md) for the full file map · [CLAUDE.md](../../CLAUDE.md)_

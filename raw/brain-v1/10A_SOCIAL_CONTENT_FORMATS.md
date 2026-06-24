@@ -970,13 +970,4 @@ When a new blog article is published, use this quick reference to know which tem
 ---
 
 <!-- docnav-related -->
-### Related docs
-- [10 · SOCIAL PLAYBOOK — The Operating System](10_SOCIAL_PLAYBOOK.md)
-- [10B · SOCIAL CALENDAR — Schedule and Triggers](10B_SOCIAL_CALENDAR.md)
-- [10C · PAID PROMOTION — Advertising Playbook](10C_PAID_PROMOTION.md)
-- [10D · CREATIVE PRODUCTION — Image and Video Scripts](10D_CREATIVE_PRODUCTION.md)
-- [02 · BRAND VOICE — How StudyRise Sounds in Writing](02_BRAND_VOICE.md)
-- [07 · IMAGE PROTOCOL — The Locked Image Rules](07_IMAGE_PROTOCOL.md)
-- [11 · PRICING MODEL — Tiers, Copy Rules, and CTAs](11_PRICING_MODEL.md)
-
-_Up: [docs index](../README.md) · [CLAUDE.md](../../CLAUDE.md)_
+_See the [index](../README.md) for the full file map · [CLAUDE.md](../../CLAUDE.md)_

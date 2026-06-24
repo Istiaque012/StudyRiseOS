@@ -73,9 +73,4 @@
 
 ---
 <!-- docnav-related -->
-### Related docs
-- [04 · SEO TECHNICAL RULES](04_SEO_TECHNICAL_RULES.md)
-- [06 · PRODUCTION PLAYBOOK](06_PRODUCTION_PLAYBOOK.md)
-- [08 · DEPLOYMENT GUIDE](08_DEPLOYMENT_GUIDE.md)
-
-_Up: [docs index](../README.md) · [CLAUDE.md](../../CLAUDE.md)_
+_See the [index](../README.md) for the full file map · [CLAUDE.md](../../CLAUDE.md)_

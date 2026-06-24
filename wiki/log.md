@@ -10,6 +10,14 @@ updated: 2026-06-25
 
 ---
 
+## [2026-06-25] fix | Task 4 contradiction fixes in raw/brain-v1 | 01_CONTEXT.md, 02_BRAND_VOICE.md, 11_PRICING_MODEL.md, README.md
+- Committed four previously-uncommitted surgical edits across raw/brain-v1/:
+  - 01_CONTEXT.md: bare `www.studyrise.app` → clickable markdown link
+  - 02_BRAND_VOICE.md: four social bio template domains → clickable links (lines 430–433)
+  - 11_PRICING_MODEL.md: social bios CTA table domain → clickable link
+  - README.md: stale file counts ("25 numbered files" / "all 26 files") → "twelve numbered files (01–12) plus the 10A–10D companions"
+- Font-stack fix (02_BRAND_VOICE.md line 32) was already committed in bbb99f71
+
 ## [2026-06-25] ingest | Paid Promotion + Creative Production (10C, 10D)
 - **Sources**: Copied `10C_PAID_PROMOTION.md` and `10D_CREATIVE_PRODUCTION.md` → `raw/brain-v1/`
 - **Created 2 new pages**:

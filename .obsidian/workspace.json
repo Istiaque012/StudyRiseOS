@@ -1,0 +1,225 @@
+{
+  "main": {
+    "id": "1f7f92a2353e7279",
+    "type": "split",
+    "children": [
+      {
+        "id": "0b419db16488a8b4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6cc684150748dcea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CLAUDE.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CLAUDE"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0dde600edf3825da",
+    "type": "split",
+    "children": [
+      {
+        "id": "16dd3ecf4b2302cd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "66c44b6fc6eb7a44",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "1b3e2e93eca26fd7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "8fc28125bfabff5d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "e136910365b76ffe",
+    "type": "split",
+    "children": [
+      {
+        "id": "ed9ff61fcb15588c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "df9c02e44e274a45",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Welcome.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Welcome"
+            }
+          },
+          {
+            "id": "704de3de78d3b7ae",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Welcome"
+            }
+          },
+          {
+            "id": "5f2aa969387e9113",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "cee16ebefcf43c27",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "3a8b7e71800577cd",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Welcome.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Welcome"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "6cc684150748dcea",
+  "lastOpenFiles": [
+    "Welcome.md",
+    "2026-06-24.md",
+    "Welcome.md.tmp.43575.e521805876ad",
+    "wiki/app-dev/Deployment Architecture.md",
+    "wiki/app-dev/App Features Spec.md",
+    "wiki/app-dev/MBBS Build Log.md",
+    "wiki/app-dev/MBBS Build Sessions.md",
+    "wiki/app-dev/MBBS Decisions Log.md",
+    "wiki/app-dev/MBBS Data Model.md",
+    "wiki/app-dev/MBBS Current State.md",
+    "wiki/app-dev/MBBS Product Spec.md",
+    "wiki/app-dev/BMDC Curriculum Reference.md",
+    "wiki/app-dev/MBBS Bangladesh Module.md",
+    "wiki/content/Deployment Guide.md",
+    "wiki/content/Audit Playbook.md",
+    "wiki/content/Pre-Deploy Checklist.md",
+    "wiki/content/SEO Technical Checklist.md",
+    "wiki/content/Image Protocol.md",
+    "wiki/content/Article Production Playbook.md",
+    "wiki/strategy/Motion & Animation.md",
+    "wiki/strategy/Site Shell System.md",
+    "wiki/strategy/Site Shell System.md.tmp.43575.54c52b673255",
+    "wiki/strategy/Brand Visual System.md",
+    "wiki/strategy/Brand Voice.md",
+    "wiki/strategy/Pricing Strategy.md",
+    "wiki/strategy/Internal Link Strategy.md",
+    "Article Production Playbook.md",
+    "wiki/strategy/Content Pipeline.md",
+    "wiki/strategy",
+    "wiki/keywords",
+    "wiki/entities",
+    "wiki/content",
+    "wiki/app-dev",
+    "wiki",
+    "raw/social-references",
+    "raw/keyword-research"
+  ]
+}

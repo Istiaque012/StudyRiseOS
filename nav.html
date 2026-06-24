@@ -1,0 +1,32 @@
+<!-- nav.html — shared menu. Single source of truth.
+     TO ADD A PAGE TO THE MENU: add ONE <a> line in BOTH marked spots below, then rebuild. -->
+<nav class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="https://www.studyrise.app/" aria-label="StudyRise home">
+      <img class="icon" src="/assets/brand/favicon.svg" alt="" width="30" height="30">
+      <span class="wm"><span class="s1">Study</span><span class="s2">Rise</span></span>
+    </a>
+    <div class="nl">
+      <!-- ADD DESKTOP MENU LINKS HERE -->
+      <a href="https://www.studyrise.app/features">Features</a>
+      <a href="https://www.studyrise.app/pricing">Pricing</a>
+      <a href="https://www.studyrise.app/blog">Blog</a>
+      <!-- END DESKTOP MENU LINKS -->
+    </div>
+    <div class="nc">
+      <a class="btn bp" href="https://www.studyrise.app/?auth=register">Try StudyRise free</a>
+      <button class="mob-btn" id="mobBtn" aria-label="Menu" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0D1B3E" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="mob-menu" id="mobMenu">
+    <!-- ADD MOBILE MENU LINKS HERE (mirror the desktop list) -->
+    <a href="https://www.studyrise.app/features">Features</a>
+    <a href="https://www.studyrise.app/pricing">Pricing</a>
+    <a href="https://www.studyrise.app/blog">Blog</a>
+    <!-- END MOBILE MENU LINKS -->
+    <a href="https://www.studyrise.app/?auth=login">Log in</a>
+    <a href="https://www.studyrise.app/?auth=register" style="color:var(--blue);font-weight:700;border-bottom:none">Try StudyRise free →</a>
+  </div>
+</nav>

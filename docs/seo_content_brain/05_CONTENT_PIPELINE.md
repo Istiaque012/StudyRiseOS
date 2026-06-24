@@ -89,12 +89,12 @@ Built on the blog-homepage / category recipes in `10_SITE_SHELL.md`. Build the h
 
 ## ★ FEATURED / FLAGSHIP PILLARS [mixed] — build first, link everything up into these
 
-| # | Title | Slug | Primary keyword | Intent | Diff | Pri | Status |
-|---|---|---|---|---|---|---|---|
-| 1 | How to Build a Study Plan You'll Actually Stick To [ALL] | `how-to-make-a-study-plan` | how to make a study plan ∘ | I | Med | P0 | ✅ |
-| 2 | Spaced Repetition for Exams: Schedule Reviews So You Actually Remember [ALL] | `spaced-repetition-for-exams` | spaced repetition ✓ | I | Med-High | P0 | ✅ |
-| 3 | What Is StudyRise? The Complete Guide [ALL] | `what-is-studyrise` | what is StudyRise (branded) ✓ | T | Low | P0 | ✅ |
-| 4 | How to Study Through MBBS in Bangladesh: A Phase-by-Phase Guide [MBBS-BD] | `how-to-study-mbbs-bangladesh` | MBBS study plan Bangladesh ✓ | I | Low | P0 | ⬜ |
+| #   | Title                                                                        | Slug                           | Primary keyword               | Intent | Diff     | Pri | Status |
+| --- | ---------------------------------------------------------------------------- | ------------------------------ | ----------------------------- | ------ | -------- | --- | ------ |
+| 1   | How to Build a Study Plan You'll Actually Stick To [ALL]                     | `how-to-make-a-study-plan`     | how to make a study plan ∘    | I      | Med      | P0  | ✅      |
+| 2   | Spaced Repetition for Exams: Schedule Reviews So You Actually Remember [ALL] | `spaced-repetition-for-exams`  | spaced repetition ✓           | I      | Med-High | P0  | ✅      |
+| 3   | What Is StudyRise? The Complete Guide [ALL]                                  | `what-is-studyrise`            | what is StudyRise (branded) ✓ | T      | Low      | P0  | ✅      |
+| 4   | How to Study Through MBBS in Bangladesh: A Phase-by-Phase Guide [MBBS-BD]    | `how-to-study-mbbs-bangladesh` | MBBS study plan Bangladesh ✓  | I      | Low      | P0  | ⬜      |
 
 > #1 anchors University + planner clusters · #2 anchors the technique cluster + the SR product story · #3 anchors the product set · #4 is the acquisition-beachhead pillar. #3 doubles as the product-set cornerstone (do not duplicate it below).
 
@@ -104,13 +104,13 @@ Built on the blog-homepage / category recipes in `10_SITE_SHELL.md`. Build the h
 
 **SERP reality (2026-06-22):** every ranking page sells a course or question bank (Academically, CanadaQBank, AMCBootcamp, Primex, AMBOSS). The neutral *plan-it-and-track-readiness* angle is open. Timely facts to use (verify against amc.org.au at draft): the MCQ pass standard rises slightly from 2026 on the same 0–500 scale; the test is computer-adaptive; AMC partnered with eMedici on a free practice resource (already a logged source inside StudyRise).
 
-| # | Title | Slug | Primary keyword | Intent | Diff | Pri | Status |
-|---|---|---|---|---|---|---|---|
-| 5 | AMC MCQ Study Plan: A Realistic 4–6 Month Timeline | `amc-mcq-study-plan` | AMC MCQ study plan ✓ | T | Med | P0 | ✅ |
-| 6 | Are You Ready for the AMC MCQ? Tracking Mocks, Weak Areas & Pace | `amc-mcq-readiness` | am I ready for AMC MCQ ✓ | C | Med | P1 | ⬜ |
-| 7 | How Many Questions a Day for the AMC MCQ? | `amc-mcq-questions-per-day` | AMC MCQ how many questions per day ∘ | I | Low-Med | P1 | ⬜ |
-| 8 | The 2026 AMC MCQ Pass-Standard Change — What It Means for You | `amc-mcq-pass-standard-2026` | AMC MCQ pass mark 2026 ✓ | I | Low-Med | P1 | ⬜ |
-| 9 | AMC vs PLAB vs USMLE: Which Pathway, and How Prep Differs | `amc-vs-plab-vs-usmle` | AMC vs PLAB vs USMLE ✓ | C | Med | P1 | ⬜ |
+| #   | Title                                                            | Slug                         | Primary keyword                      | Intent | Diff    | Pri | Status |
+| --- | ---------------------------------------------------------------- | ---------------------------- | ------------------------------------ | ------ | ------- | --- | ------ |
+| 5   | AMC MCQ Study Plan: A Realistic 4–6 Month Timeline               | `amc-mcq-study-plan`         | AMC MCQ study plan ✓                 | T      | Med     | P0  | ✅      |
+| 6   | Are You Ready for the AMC MCQ? Tracking Mocks, Weak Areas & Pace | `amc-mcq-readiness`          | am I ready for AMC MCQ ✓             | C      | Med     | P1  | ⬜      |
+| 7   | How Many Questions a Day for the AMC MCQ?                        | `amc-mcq-questions-per-day`  | AMC MCQ how many questions per day ∘ | I      | Low-Med | P1  | ⬜      |
+| 8   | The 2026 AMC MCQ Pass-Standard Change — What It Means for You    | `amc-mcq-pass-standard-2026` | AMC MCQ pass mark 2026 ✓             | I      | Low-Med | P1  | ⬜      |
+| 9   | AMC vs PLAB vs USMLE: Which Pathway, and How Prep Differs        | `amc-vs-plab-vs-usmle`       | AMC vs PLAB vs USMLE ✓               | C      | Med     | P1  | ⬜      |
 
 > #9 captures PLAB/USMLE searchers even though those full clusters are backlogged; it cross-links to #26 (after-MBBS bridge).
 

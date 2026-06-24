@@ -1,6 +1,6 @@
 ---
 title: Wiki Index
-updated: 2026-06-24
+updated: 2026-06-25
 ---
 
 # Wiki Index
@@ -34,6 +34,16 @@ updated: 2026-06-24
 - [[Audit Playbook]] — Monthly health check, AI-visibility check, targeted on-demand audits
 
 ## App Development
+
+### System-Wide
+- [[Unified App Architecture]] — Three-mode SPA (Exam/University/MBBS), tech stack, shared infra, deferred work
+- [[Component Architecture]] — Source tree: screens, components, hooks, and lib by mode
+- [[Migration & Schema History]] — 25+ SQL migrations across USM, MBBS, exam, admin; full table inventory
+- [[Feature Flags Registry]] — app_feature_flags registry, Pro gating, subscription state, known flag issues
+- [[App Features Spec]] — All three modes: Exam (12 screens), University (10 screens), MBBS Bangladesh
+- [[Deployment Architecture]] — Two Vercel projects from one repo, env vars, serverless functions
+
+### MBBS Bangladesh
 - [[MBBS Bangladesh Module]] — BMDC-faithful digital twin: R3.0 redesign thesis, 10-session build order
 - [[BMDC Curriculum Reference]] — Authoritative BMDC 2021: phases, subjects, cards, items, marks
 - [[MBBS Product Spec]] — Digital twin vision, 13 feature parts, what the module is NOT
@@ -42,8 +52,6 @@ updated: 2026-06-24
 - [[MBBS Decisions Log]] — Binding decisions R1-R13: curriculum constant, honours, attendance, lockout
 - [[MBBS Build Sessions]] — Claude Code build prompts R0-R9 in dependency order
 - [[MBBS Build Log]] — Append-only implementation log: v2.0 Sessions 0-14, R3.0 sessions
-- [[App Features Spec]] — All three modes: Exam (12 screens), University (10 screens), MBBS Bangladesh
-- [[Deployment Architecture]] — Two Vercel projects from one repo, env vars, serverless functions
 
 ## Deployment
 - [[Deployment Guide]] — 7-item handoff package, deploy prompt, sitemap entry, post-publish checklist

@@ -1,4 +1,4 @@
-# SakibOS — LLM Wiki Schema
+# StudyRiseOS — LLM Wiki Schema
 
 > This file tells Claude how the wiki is structured and how to operate on it.
 > Co-evolved by Istiaque and Claude. Last updated: 2026-06-24.
@@ -156,18 +156,18 @@ When the user says "write [article]" or "generate [content piece]":
 1. **Read the wiki** — Pull context from [[Content Pipeline]], [[Article Production Playbook]], [[Brand Voice]], [[SEO Strategy]], [[Site Shell System]], [[Internal Link Strategy]], and any relevant entity/keyword pages.
 2. **Confirm the brief** — Summarize: target keyword, audience segment, content angle, wave assignment. Get user approval.
 3. **Write in the website repo** — Switch to `/Users/istiaque/Desktop/StudyRise` and generate the article files (HTML + any assets) following the 5-phase playbook.
-4. **Run checks** — Apply [[SEO Technical Checklist]] and [[Pre-Deploy Checklist]] against the generated files.
+4. **Run checks** — Apply [[SEO Technical Checklist]] and [[Pre-Deploy Checklist]] against the generated files. ALWAYS run `python3 build_site.py` (which now also runs `check_blog.py`) before deploying — it fails the build if an article has broken structure (unstyled FAQ/CTA, missing from the blog index or sitemap). For new articles, clone an existing article (e.g. `public/blog/amc-mcq-study-plan.html`) rather than hand-authoring the shell — the `.faq`, `.cta-band`, and `.related` scaffolding come for free.
 5. **Commit & push** — Commit with a descriptive message, push to GitHub. Deployment happens automatically or via the deploy guide.
-6. **Update the wiki** — Back in SakibOS:
+6. **Update the wiki** — Back in StudyRiseOS:
    - Update [[Content Pipeline]] — mark the piece as `deployed`, add URL and publish date
    - Update [[Internal Link Strategy]] — register new inbound/outbound links
    - Update any entity/keyword pages that reference this content
    - Append to `wiki/log.md`
-   - Commit and push SakibOS
+   - Commit and push StudyRiseOS
 
 ### Cross-Repo References
 - **Website repo**: `/Users/istiaque/Desktop/StudyRise` → `git@github.com:Istiaque012/StudyRise.git`
-- **Wiki repo**: `/Users/istiaque/Downloads/SakibOS` → `git@github.com:Istiaque012/SakibOS.git`
+- **Wiki repo**: `/Users/istiaque/Downloads/StudyRIse Main/StudyRIseOS` → `git@github.com:Istiaque012/StudyRiseOS.git`
 - The website repo's `docs/seo_content_brain/` is the old Brain (now frozen as `raw/brain-v1/` here)
 - The wiki is the single source of truth for content strategy; the website repo is execution only
 

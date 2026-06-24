@@ -145,6 +145,34 @@ Description of what happened. Pages created/updated listed.
 
 ---
 
+## Content Generation Workflow
+
+The wiki drives content creation for the StudyRise website. The website repo lives at `/Users/istiaque/Desktop/StudyRise` (GitHub: `Istiaque012/StudyRise`).
+
+### GENERATE — Writing a new article
+
+When the user says "write [article]" or "generate [content piece]":
+
+1. **Read the wiki** — Pull context from [[Content Pipeline]], [[Article Production Playbook]], [[Brand Voice]], [[SEO Strategy]], [[Site Shell System]], [[Internal Link Strategy]], and any relevant entity/keyword pages.
+2. **Confirm the brief** — Summarize: target keyword, audience segment, content angle, wave assignment. Get user approval.
+3. **Write in the website repo** — Switch to `/Users/istiaque/Desktop/StudyRise` and generate the article files (HTML + any assets) following the 5-phase playbook.
+4. **Run checks** — Apply [[SEO Technical Checklist]] and [[Pre-Deploy Checklist]] against the generated files.
+5. **Commit & push** — Commit with a descriptive message, push to GitHub. Deployment happens automatically or via the deploy guide.
+6. **Update the wiki** — Back in SakibOS:
+   - Update [[Content Pipeline]] — mark the piece as `deployed`, add URL and publish date
+   - Update [[Internal Link Strategy]] — register new inbound/outbound links
+   - Update any entity/keyword pages that reference this content
+   - Append to `wiki/log.md`
+   - Commit and push SakibOS
+
+### Cross-Repo References
+- **Website repo**: `/Users/istiaque/Desktop/StudyRise` → `git@github.com:Istiaque012/StudyRise.git`
+- **Wiki repo**: `/Users/istiaque/Downloads/SakibOS` → `git@github.com:Istiaque012/SakibOS.git`
+- The website repo's `docs/seo_content_brain/` is the old Brain (now frozen as `raw/brain-v1/` here)
+- The wiki is the single source of truth for content strategy; the website repo is execution only
+
+---
+
 ## What Claude Should NOT Do
 - Never modify files in `raw/` — they are immutable sources
 - Never delete wiki pages — mark them as `status: archived` instead

@@ -3,7 +3,7 @@ title: Content Pipeline
 type: strategy
 sources: [raw/brain-v1/05_CONTENT_PIPELINE.md]
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-06-25
 ---
 
 # Content Pipeline
@@ -34,6 +34,11 @@ Each piece has: status (idea/queued/writing/deployed), target keyword, SERP diff
 
 ## Live Article Maintenance
 Published articles tracked with: URL, publish date, last refresh, performance notes.
+
+### Deployed Articles
+| Slug | Title | Audience | Keyword | Published | Status |
+|---|---|---|---|---|---|
+| amc-mcq-pass-standard-2026 | The 2026 AMC MCQ Pass-Standard Change — What It Means for You | [EXAM] | amc mcq pass standard 2026 | 2026-06-25 | deployed |
 
 ## Backlog
 PLAB 1 and USMLE content parked until Exam Mode gains traction in those markets.

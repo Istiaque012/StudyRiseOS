@@ -3,7 +3,7 @@ title: Internal Link Strategy
 type: strategy
 sources: [raw/brain-v1/12_INTERNAL_LINKS.md]
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-06-25
 ---
 
 # Internal Link Strategy
@@ -30,6 +30,10 @@ Tracks known issues:
 - **D-series** — dead links needing removal or redirect
 - **F-series** — freshness issues
 - **H-series** — hub connection gaps
+
+## Recent Link Additions
+- `amc-mcq-study-plan` → `amc-mcq-pass-standard-2026` (inline link on "nudged that standard slightly higher")
+- `amc-mcq-pass-standard-2026` → `amc-mcq-study-plan` (two inline links: "AMC MCQ study plan" in sections 4 and 7)
 
 ## Rules
 - New articles must link to at least 2 existing articles

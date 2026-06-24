@@ -42,7 +42,7 @@ Published articles tracked with: URL, publish date, last refresh, performance no
 | study-planner | Study Planner App — Turn Your Syllabus Into a Daily Plan | ALL | study planner | 2026-06-25 | deployed |
 | amc-study-planner | AMC MCQ Study Planner App for IMGs | [EXAM] | amc mcq study planner | (live) | deployed |
 
-> `/study-planner` ⚠️ uses `/og-image.png` as a fallback OG — make a dedicated `study-planner-og.webp` per [[Image Protocol]] when convenient. Links out to `/amc-study-planner`; linked from nav, footer, and 3 blog "related" cards.
+> `/study-planner` ✅ OG image resolved (2026-06-25): dedicated `study-planner-og.webp` deployed. Links out to `/amc-study-planner`; linked from nav, footer, and 3 blog "related" cards.
 
 ### Resolved (from [[SEO Remediation 2026-06]])
 - ~~`/amc-mcq-study-planner` landing page~~ — not needed; `/amc-study-planner` already exists and serves this transactional intent. Ghost slug removed from routing.

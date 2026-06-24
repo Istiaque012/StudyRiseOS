@@ -9,11 +9,17 @@ updated: 2026-06-25
 
 ---
 
+## [2026-06-25] update+deploy | Study Planner OG image + nav links site-wide
+- **Repo**: `/Users/istiaque/Desktop/StudyRise` → committed `b7399ec`, pushed to `main` (Vercel auto-deploy)
+- **OG image**: added `study-planner-og.webp` (1200×630, dark navy, weekly calendar mockup); updated `og:image` + `twitter:image` meta in `study-planner.html` (was using generic `/og-image.png`)
+- **Nav link**: added "Study Planner" to navbar (desktop + mobile) and footer on all pages: `landing.html`, `features.html`, `pricing.html`, `blog.html`, `what-is-studyrise.html` — now consistent with `study-planner.html` and `amc-study-planner.html` which already had it
+- **Updated wiki pages**: [[Content Pipeline]] (follow-up resolved: OG image done), log entry
+
 ## [2026-06-25] generate+deploy | /study-planner landing page + SEO fixes shipped
 - **Repo**: `/Users/istiaque/Desktop/StudyRise` → committed `121ac97`, pushed to `main` (Vercel auto-deploy)
 - **New page**: `public/study-planner.html` — generic "study planner" landing page (all exams + university), cloned from amc-study-planner shell; SoftwareApplication + BreadcrumbList + FAQPage JSON-LD; freemium-safe copy. Wired rewrite in `vercel.json`, added to `sitemap.xml`. Nav/footer/robots already referenced it (was dead-ending).
 - **Updated pages**: [[Content Pipeline]] (deployed table + resolved queue), [[Internal Link Strategy]] (registered links, D-series 301 resolved), [[SEO Remediation 2026-06]] (#4 done)
-- **Follow-up**: make a dedicated `study-planner-og.webp` (currently uses `/og-image.png` fallback)
+- **Follow-up**: ~~make a dedicated `study-planner-og.webp`~~ ✅ done (2026-06-25, commit `b7399ec`)
 
 ## [2026-06-25] fix | SEO Remediation — implemented in StudyRise repo
 - **Repo**: `/Users/istiaque/Desktop/StudyRise`

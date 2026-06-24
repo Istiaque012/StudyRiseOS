@@ -40,22 +40,7 @@ docs/
 │   ├── AUTH_SECURITY_SESSIONS.md                  1,186 lines
 │   └── SEO_FIX_SESSIONS.md                          590 lines
 │
-├── seo_content_brain/
-│   ├── README.md                                    137 lines
-│   ├── 01_CONTEXT.md                                146 lines
-│   ├── 02_BRAND_VOICE.md                            122 lines
-│   ├── 03_SEO_STRATEGY.md                           336 lines
-│   ├── 04_SEO_TECHNICAL_RULES.md                    206 lines
-│   ├── 05_CONTENT_PIPELINE.md                       252 lines
-│   ├── 06_PRODUCTION_PLAYBOOK.md                    297 lines
-│   ├── 07_IMAGE_PROTOCOL.md                         111 lines
-│   ├── 08_DEPLOYMENT_GUIDE.md                       131 lines
-│   ├── 09_AUDIT_PLAYBOOK.md                         143 lines
-│   ├── 10_SITE_SHELL.md                             490 lines
-│   ├── BLOG_ANIMATIONS_GUIDE.md                     327 lines
-│   ├── CHANGELOG.md                                  23 lines
-│   ├── MOTION_GUIDE.md                              444 lines
-│   └── PRE_DEPLOY_CHECKLIST.md                       60 lines
+│   (seo_content_brain/ removed — canonical copy is raw/brain-v1/)
 │
 └── _archive/                                        (retired — do not edit)
     ├── BMDC_MBBS_Curriculum_2021_Clean_StudyRise.md  9,658 lines
@@ -80,7 +65,7 @@ docs/
 | `planning/` | Core product/design references: full USM feature spec, brand kit, design prompts, animation rules |
 | `security/` | Auth hardening rules, RLS guidelines, secrets policy |
 | `sessions/` | Build session plans for the auth/security track and SEO fix track |
-| `seo_content_brain/` | Full SEO + content playbook: strategy, brand voice, pricing model, pipeline, image rules, deployment, audit |
+| `raw/brain-v1/` | Full SEO + content playbook: strategy, brand voice, pricing model, pipeline, image rules, deployment, audit (canonical source) |
 | `_archive/` | Retired reports and superseded docs — the BMDC curriculum moved here post-consolidation |
 
 ---
@@ -93,8 +78,8 @@ docs/
 | `planning/BRAND_KIT.md` | 1,221 | Full brand system: typography, colour, tone, copy rules |
 | `sessions/AUTH_SECURITY_SESSIONS.md` | 1,186 | Auth/security build session plans (sessions 1–12) |
 | `planning/DESIGN_PROMPTS.md` | 1,120 | AI design generation prompts for all screens |
-| `seo_content_brain/MOTION_GUIDE.md` | 444 | Blog/landing page animation guidelines |
-| `seo_content_brain/10_SITE_SHELL.md` | 490 | Shared-shell rulebook: page-type recipes, hero rule, gate, partial/asset model |
+| `raw/brain-v1/MOTION_GUIDE.md` | 451 | Blog/landing page animation guidelines |
+| `raw/brain-v1/10_SITE_SHELL.md` | 720 | Shared-shell rulebook: page-type recipes, hero rule, gate, partial/asset model |
 | `diagnostics/USM_DIAGNOSTIC.md` | 816 | University mode data flow and hook diagnostics |
 | `sessions/SEO_FIX_SESSIONS.md` | 590 | SEO routing fix session log |
 | `deployment/deployment-architecture.md` | 480 | Full Vercel + DNS + env var reference |

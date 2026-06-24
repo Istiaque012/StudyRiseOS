@@ -27,8 +27,8 @@ Self-contained, numbered set with its own map. Start at [`00_MBBS_INDEX.md`](mbb
 | [06_MBBS_BUILD_SESSIONS.md](mbbs/06_MBBS_BUILD_SESSIONS.md) | Build prompts in dependency order |
 | [07_MBBS_BUILD_LOG.md](mbbs/07_MBBS_BUILD_LOG.md) | Append-only implementation log |
 
-### [`seo_content_brain/`](seo_content_brain/README.md) — the content & SEO "brain" (Claude-project knowledge set)
-Self-contained, numbered set with its own [README](seo_content_brain/README.md). Files `01`–`09` plus motion/animation guides. SEO strategy, audit findings, blog pipeline, technical rules, and production playbook all live here — the former `docs/seo/` content was absorbed into [`03_SEO_STRATEGY.md`](seo_content_brain/03_SEO_STRATEGY.md).
+### `raw/brain-v1/` — the content & SEO "brain" (canonical source)
+Self-contained, numbered set with its own [README](../raw/brain-v1/README.md). Files `01`–`12` plus social companions (10A–10D) and motion/animation guides. SEO strategy, audit findings, blog pipeline, technical rules, and production playbook all live here. Canonical copy lives in `raw/brain-v1/`; `docs/seo_content_brain/` was removed (it was a stale duplicate).
 
 ### [`planning/`](planning/FEATURES.md) — product & design specs
 | File | Purpose |
@@ -70,4 +70,4 @@ Completed audit reports, QA sign-offs, and shipped session plans. No longer acti
 2. [`planning/FEATURES.md`](planning/FEATURES.md) — what the product does
 3. [`planning/BRAND_KIT.md`](planning/BRAND_KIT.md) — how it looks and sounds
 4. [`deployment/deployment-architecture.md`](deployment/deployment-architecture.md) — how it ships
-5. Then the topic folder you need: `mbbs/`, `seo_content_brain/`, `security/`.
+5. Then the topic folder you need: `mbbs/`, `raw/brain-v1/`, `security/`.

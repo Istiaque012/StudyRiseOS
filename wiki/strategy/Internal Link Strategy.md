@@ -8,7 +8,7 @@ updated: 2026-06-25
 
 # Internal Link Strategy
 
-Living site map and internal link registry for studyrise.app.
+Living site map and internal link registry for www.studyrise.app.
 
 ## Architecture
 Hub-and-spoke model:

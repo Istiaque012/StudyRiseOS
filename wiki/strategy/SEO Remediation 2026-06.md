@@ -45,7 +45,7 @@ Listed in `sitemap.xml` at priority `0.8` with its own OG image, but serves the 
 ## P1 — Accuracy & consolidation
 
 ### #3 Homepage FAQ contradicts freemium model (CONTENT)
-"Is StudyRise free?" still uses retired positioning (paid tier "on the roadmap"). Current model: Pro is live — 30 days full access, then basic free forever, Pro for advanced. E-E-A-T / AI-Overview accuracy risk on the most-crawled page. Also **no `FAQPage` JSON-LD** = missed rich-result + AI-citation. Fix both together (schema text must mirror on-page copy). Confirm phrasing against [[Pricing Strategy]] (`11_PRICING_MODEL.md`); no "premium/unlock/free trial/upgrade" per [[Brand Voice]]. Draft answer:
+"Is StudyRise free?" still uses retired positioning (paid tier "on the roadmap"). Current model: Pro is live — 30 days full access, then basic free forever, Pro for advanced. E-E-A-T / AI-Overview accuracy risk on the most-crawled page. Also **no `FAQPage` JSON-LD** = missed AI-citation opportunity. Fix both together (schema text must mirror on-page copy). Confirm phrasing against [[Pricing Strategy]] (`11_PRICING_MODEL.md`); no "premium/unlock/free trial/upgrade" per [[Brand Voice]]. Draft answer:
 > Yes — every new account gets 30 days of full access free, no card required. After that, the core planning, study logging, spaced repetition and mock tracking stay free for good. Advanced analytics and the AI Study Advisor are part of StudyRise Pro.
 
 ### #4 `/study-planner` (+ likely `/mbbs-bangladesh`) missing from sitemap (CONTENT → DEV)

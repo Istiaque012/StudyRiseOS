@@ -8,7 +8,7 @@ updated: 2026-06-24
 
 # StudyRise Overview
 
-StudyRise is a study-planning web app at **studyrise.app** serving three distinct audience modes:
+StudyRise is a study-planning web app at **www.studyrise.app** serving three distinct audience modes:
 
 ## Three Modes
 

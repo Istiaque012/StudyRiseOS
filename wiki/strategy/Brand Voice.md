@@ -23,7 +23,7 @@ updated: 2026-06-25
 - **[MBBS-BD]** — Formal, BMDC-authoritative, NO gamification
 
 ## Banned Phrases
-revolutionary, hack, free trial, premium, unlock, game-changer, crush it, smash your goals
+See [[02_BRAND_VOICE]] §7.2 for the full banned-phrases list
 
 ## Approved Alternatives
 structured, evidence-based, built for, designed around, your progress, your plan

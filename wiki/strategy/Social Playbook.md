@@ -59,7 +59,7 @@ The five [[Brand Voice]] pillars are constant; the *register* shifts:
 
 ### CTA Language (from [[Pricing Strategy]])
 - ✅ "Try StudyRise free" / "Start free — no card required." / "Free for 30 days — every feature, no card required."
-- ❌ "Free trial" / "Premium" / "Unlock" / "Upgrade" (social — only OK on pricing page)
+- ❌ Banned phrases per [[11_PRICING_MODEL]] §7.2 (social — only OK on pricing page)
 
 ### Social-Specific Banned Phrases
 "Link in bio" (as entire CTA), "Drop a 🔥 if you agree", "Tag someone who needs this", "No one is talking about this", "This changed everything", "STOP scrolling", "Life hack" / "Study hack" — all banned. Full list in [[Brand Voice]].

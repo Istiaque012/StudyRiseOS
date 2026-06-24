@@ -30,7 +30,7 @@ Optimizing for Google AI Overviews, ChatGPT, Perplexity, and Gemini citations:
 - See [[Internal Link Strategy]] for the link graph
 
 ## Competitive Landscape
-_(To be populated as competitor analyses are ingested — see [[wiki/entities/]])_
+_(To be populated as competitor analyses are ingested)_
 
 ## Regional SEO
 MBBS-BD content targets Bangladesh specifically. Exam content targets Australia (AMC), UK (PLAB), US (USMLE).

@@ -32,7 +32,7 @@ Google Search Console, Google Analytics, Google Trends, Canva, Google Drive, Ver
 
 ## Standing Rules
 1. Never guess a medical or curriculum fact — always verify
-2. GA snippet (G-R38JK89PP5) must be present on every page
+2. GA snippet must be present on every page (see [[SEO Technical Checklist]])
 
 ## Key Files
 - [[SEO Strategy]] — keyword mapping and clustering

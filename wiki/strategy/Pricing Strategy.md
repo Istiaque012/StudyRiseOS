@@ -14,7 +14,7 @@ Freemium with 30-day full access onboarding → Free Starter or Pro.
 ## Social & Ad CTA Rules
 All social and paid ad copy follows these CTA rules (enforced in [[Social Playbook]] and [[Paid Promotion]]):
 - ✅ "Try StudyRise free" / "Start free — no card required." / "Free for 30 days — every feature, no card required."
-- ❌ Never say "Free trial", "Premium", "Unlock", "Upgrade", or "Download now" in social or ad copy
+- ❌ Banned phrases apply — see [[11_PRICING_MODEL]] §7.2 and [[02_BRAND_VOICE]] §7.2 for the full list
 - Ads must pass the 3-second test: viewer understands what this is and who it's for within 3 seconds
 
 ## Per-Mode Pricing
@@ -38,4 +38,4 @@ All social and paid ad copy follows these CTA rules (enforced in [[Social Playbo
 - Ambassador rewards program
 
 ## Banned Copy Phrases
-"premium", "unlock", "free trial", "revolutionary", "hack" — see [[Brand Voice]]
+See [[11_PRICING_MODEL]] §7.2 and [[02_BRAND_VOICE]] §7.2 for the full banned-phrases list

@@ -83,7 +83,7 @@ Rules: don't repeat what they saw, frequency cap 3–5/week, $3–5/day sufficie
 
 ## Ad Creative Rules
 
-- CTA: "Try StudyRise free" / "Start free — no card required." Never "free trial," "unlock," "premium," "upgrade," "download now"
+- CTA: "Try StudyRise free" / "Start free — no card required." Banned phrases per [[11_PRICING_MODEL]] §7.2
 - Brand palette + [[Brand Visual System]] font stack only. No stock photos, no face on camera.
 - 3-second test: viewer must understand what this is and who it's for within 3 seconds
 - 3–5 variations per campaign; kill bottom 2 after 7 days

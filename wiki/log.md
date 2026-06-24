@@ -10,6 +10,12 @@ updated: 2026-06-25
 
 ---
 
+## [2026-06-25] refactor | Task 7 wiki de-sync — strip duplicated rule values, link to source | Content & SEO System Overview.md, StudyRise Overview.md, Pricing Strategy.md, Brand Voice.md, Paid Promotion.md, Social Playbook.md, SEO Strategy.md
+- Stripped literal GA ID (G-R38JK89PP5) from 2 wiki pages → linked to [[SEO Technical Checklist]]
+- Replaced 5 drifted partial banned-phrase lists with links to [[11_PRICING_MODEL]] §7.2 / [[02_BRAND_VOICE]] §7.2
+- Fixed dangling [[wiki/entities/]] wikilink in SEO Strategy → plain text
+- Conservative pass: kept verbatim CTA strings, social-specific quick-ref lists, freemium summaries, and checklist items untouched
+
 ## [2026-06-25] fix | Task 4 contradiction fixes in raw/brain-v1 | 01_CONTEXT.md, 02_BRAND_VOICE.md, 11_PRICING_MODEL.md, README.md
 - Committed four previously-uncommitted surgical edits across raw/brain-v1/:
   - 01_CONTEXT.md: bare `www.studyrise.app` → clickable markdown link

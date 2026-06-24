@@ -32,6 +32,6 @@ Freemium — 30-day full access, then Free Starter or Pro. See [[Pricing Strateg
 `https://www.studyrise.app/` — always with www, always HTTPS.
 
 ## Key Identifiers
-- Google Analytics: G-R38JK89PP5
+- Google Analytics: see [[SEO Technical Checklist]]
 - Vercel project ID: prj_s8R4XujA5enEEHqzph8N6wJPWBhx
 - Admin Vercel project ID: prj_IDGEh1AkamPQhb654NdaDHXyrBc6

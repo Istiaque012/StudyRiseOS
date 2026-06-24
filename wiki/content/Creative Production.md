@@ -53,7 +53,7 @@ Minimal, data-forward, no stock photos, no illustrations of people, no emojis in
 | **P7** Reel/Short Cover Frame | V1–V4 | 1080×1920 |
 | **P8** LinkedIn Document Cover | L-series | 1080×1080 |
 
-Base prefix ensures brand consistency across all tools (DALL-E, Midjourney, etc.): dark navy background, [[Brand Voice]] font stack, no stock photos/faces, StudyRise logo bottom-right.
+Base prefix ensures brand consistency across all tools (DALL-E, Midjourney, etc.): dark navy background, [[Brand Visual System]] font stack, no stock photos/faces, StudyRise logo bottom-right.
 
 Full prompt text with all hex values and layout specs in source doc §2.
 
@@ -115,7 +115,7 @@ Platform: `ig`, `fb`, `yt`, `li`. Format: `reel`, `stat-card`, `carousel`, etc. 
 
 ## Quality Checklist (12 items)
 
-Before publishing any asset: brand colours correct, [[Brand Voice]] font stack, logo present, mobile-readable, no banned words, CTA language correct, no stock photos, facts verified with source visible, correct dimensions, [MBBS-BD] tone check, demo data in screenshots, file named correctly.
+Before publishing any asset: brand colours correct, [[Brand Visual System]] font stack, logo present, mobile-readable, no banned words, CTA language correct, no stock photos, facts verified with source visible, correct dimensions, [MBBS-BD] tone check, demo data in screenshots, file named correctly.
 
 ## Production Time Estimates
 

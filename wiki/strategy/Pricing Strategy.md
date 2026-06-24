@@ -1,15 +1,21 @@
 ---
 title: Pricing Strategy
 type: strategy
-sources: [raw/brain-v1/11_PRICING_MODEL.md]
+sources: [raw/brain-v1/11_PRICING_MODEL.md, raw/brain-v1/10_SOCIAL_PLAYBOOK.md]
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-06-25
 ---
 
 # Pricing Strategy
 
 ## Model
 Freemium with 30-day full access onboarding → Free Starter or Pro.
+
+## Social & Ad CTA Rules
+All social and paid ad copy follows these CTA rules (enforced in [[Social Playbook]] and [[Paid Promotion]]):
+- ✅ "Try StudyRise free" / "Start free — no card required." / "Free for 30 days — every feature, no card required."
+- ❌ Never say "Free trial", "Premium", "Unlock", "Upgrade", or "Download now" in social or ad copy
+- Ads must pass the 3-second test: viewer understands what this is and who it's for within 3 seconds
 
 ## Per-Mode Pricing
 

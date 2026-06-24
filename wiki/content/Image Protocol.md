@@ -1,9 +1,9 @@
 ---
 title: Image Protocol
 type: content
-sources: [raw/brain-v1/07_IMAGE_PROTOCOL.md]
+sources: [raw/brain-v1/07_IMAGE_PROTOCOL.md, raw/brain-v1/10_SOCIAL_PLAYBOOK.md]
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-06-25
 ---
 
 # Image Protocol
@@ -12,6 +12,9 @@ updated: 2026-06-24
 
 ### Rule 1: OG Image
 Always from Canva/ChatGPT brief. 1200×630 WebP. Saved to `/blog/images/{slug}-og.webp`.
+
+### Social Image Dimensions
+Platform-specific dimensions defined in [[Social Playbook]]: FB feed 1200×630, IG square 1080×1080 or portrait 1080×1350, YT thumbnail 1280×720, LinkedIn 1200×627, Stories/Reels/Shorts 1080×1920. No stock photos — real screenshots, illustrations, or Canva-generated branded graphics only.
 
 ### Rule 2: Hero Image
 By importance — not every article needs one. When used: 1200×675.

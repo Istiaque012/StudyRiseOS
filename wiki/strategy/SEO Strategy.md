@@ -3,7 +3,7 @@ title: SEO Strategy
 type: strategy
 sources: [raw/brain-v1/03_SEO_STRATEGY.md, raw/brain-v1/12_INTERNAL_LINKS.md]
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-06-25
 ---
 
 # SEO Strategy
@@ -37,6 +37,9 @@ MBBS-BD content targets Bangladesh specifically. Exam content targets Australia 
 
 ## Active Remediation
 See [[SEO Remediation 2026-06]] for the live-site audit (2026-06-24). Key standing lesson: renamed/retired URLs must get a 301 in `vercel.json` and every real page must be a static page (not an SPA catch-all fallthrough that returns a homepage canonical). Two P0s — the AMC blog slug rename and the `/amc-mcq-study-planner` ghost sitemap entry — are currently bleeding the site's only non-branded traffic.
+
+## Social Distribution & SEO
+YouTube is the most search-driven social platform — titles and descriptions should include target keywords. Social posts that link to articles use UTM parameters for GA4 tracking. See [[Social Playbook]] for the full UTM structure and platform-specific SEO notes (YouTube titles, LinkedIn dwell-time optimization).
 
 ## Maintenance Cadence
 - Evergreen content: review quarterly

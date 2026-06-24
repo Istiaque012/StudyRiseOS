@@ -1,6 +1,7 @@
 ---
 title: Wiki Log
 updated: 2026-06-25
+
 ---
 
 # Wiki Log
@@ -8,6 +9,36 @@ updated: 2026-06-25
 > Chronological, append-only record of all wiki operations.
 
 ---
+
+## [2026-06-25] ingest | Paid Promotion + Creative Production (10C, 10D)
+- **Sources**: Copied `10C_PAID_PROMOTION.md` and `10D_CREATIVE_PRODUCTION.md` → `raw/brain-v1/`
+- **Created 2 new pages**:
+  - [[Paid Promotion]] — spend-readiness checklist, $0–500/mo budget tiers, platform selection by segment with 2026 cost benchmarks, funnel-stage campaigns, targeting blueprints (AMC/MBBS-BD/UNI), retargeting pixel setup, 5 ready-to-run playbooks, ad creative rules, KPI targets, tracking setup
+  - [[Creative Production]] — brand asset reference card (colours/typography/logo/visual style), 8 AI image prompt templates (P1–P8), 3 video production methods (animated text/screen recording/hybrid), 3 complete video scripts, Canva workflow, screenshot production with demo data personas, background music guide, asset naming convention, 12-item quality checklist
+- **Updated 2 pages**:
+  - [[Social Playbook]] — all 4 companion files now marked as ingested with wikilinks, sources list expanded
+  - `wiki/index.md` — added both new pages under Social & Marketing
+
+## [2026-06-25] ingest | Social Content Formats + Social Calendar (10A, 10B)
+- **Sources**: Copied `10A_SOCIAL_CONTENT_FORMATS.md` and `10B_SOCIAL_CALENDAR.md` → `raw/brain-v1/`
+- **Created 2 new pages**:
+  - [[Social Content Formats]] — 21 reusable post templates (S1–S4, C1–C3, V1–V6, L1–L3, F1, ST1–ST2), AI image prompts, article-to-social cheat sheet, all no-face-on-camera
+  - [[Social Calendar]] — Article Echo Protocol (7-step Day 0–30+), weekly posting grid, 3 segment calendars (AMC 5-stage arc, MBBS-BD May/Nov exam anchoring, UNI dual-hemisphere), paid triggers, repurposing cycle, when-not-to-post rules
+- **Updated 3 pages**:
+  - [[Social Playbook]] — companion files section updated from "pending" to "ingested" with wikilinks, sources list expanded
+  - [[Content Pipeline]] — social distribution section now references Article Echo Protocol and Content Formats cheat sheet
+  - `wiki/index.md` — added both new pages under Social & Marketing
+
+## [2026-06-25] ingest | Social Playbook (10_SOCIAL_PLAYBOOK.md)
+- **Source**: Copied `10_SOCIAL_PLAYBOOK.md` → `raw/brain-v1/10_SOCIAL_PLAYBOOK.md`
+- **Created 1 new page**: [[Social Playbook]] — platform registry (4 accounts), audience-to-platform map, per-platform voice adaptation, 4 content pillars (40/25/20/15 split), non-negotiable copy rules, posting cadence, hashtag clusters, cross-posting rules, UTM tracking, community engagement, 2026 algorithm notes
+- **Updated 5 pages**:
+  - [[Brand Voice]] — added social-specific banned phrases section, linked social register adaptation
+  - [[Content Pipeline]] — added social distribution section with pillar percentages and cadence
+  - [[Image Protocol]] — added social image dimensions table and no-stock-photos rule
+  - [[Pricing Strategy]] — added social CTA rules (approved/banned phrases)
+  - [[SEO Strategy]] — added social distribution & SEO section (YouTube keyword targeting, UTM structure)
+- **Updated** `wiki/index.md` — added Social & Marketing section
 
 ## [2026-06-25] update+deploy | Study Planner OG image + nav links site-wide
 - **Repo**: `/Users/istiaque/Desktop/StudyRise` → committed `b7399ec`, pushed to `main` (Vercel auto-deploy)

@@ -4,6 +4,105 @@ Most recent entry first.
 
 ---
 
+## 2026-06-25 — Social media brain: files 10, 10A, 10B, 10C, 10D
+
+Five new files completing the social media and paid promotion layer. These are supplementary
+knowledge files that sit alongside 01–12 and are ingested into the Obsidian wiki via Claude Code.
+All five depend on `02_BRAND_VOICE.md`, `11_PRICING_MODEL.md`, Brand Kit v2.2, and
+`07_IMAGE_PROTOCOL.md`. MBBS-BD restrained tone enforced throughout.
+
+- **New file `10_SOCIAL_PLAYBOOK.md`** — the operating system for StudyRise's social media
+  presence. Covers four platforms (Facebook @studyriseapp, Instagram @studyrise.app, YouTube
+  @studyriseapp, LinkedIn /company/studyriseapp). Audience-to-platform mapping: [MBBS-BD]
+  lives on Facebook; [EXAM] spans Facebook + YouTube; [UNI] is Instagram-first. Voice
+  adaptation per channel (Facebook = warm peer-level; Instagram = visual-first concise;
+  YouTube = knowledgeable explainer; LinkedIn = founder/professional). Four content pillars:
+  Study Technique 40%, Exam Strategy 25%, Product in Action 20%, Community & Credibility 15%.
+  Social-specific copy rules (CTA language, banned phrases, pricing guardrails from file 11).
+  Platform algorithm notes current as of June 2026. Minimum posting cadence for a solo
+  operator (3–5 posts/week per platform). Pre-built hashtag clusters per segment. Cross-posting
+  rules. UTM tracking structure. Community engagement guidelines.
+
+- **New file `10A_SOCIAL_CONTENT_FORMATS.md`** — reusable post template library. 21 templates
+  across 7 categories:
+  - Static images: S1 single-stat, S2 myth/fact, S3 tip card, S4 before/after (4 templates)
+  - Carousels: C1 step-by-step guide, C2 comparison, C3 listicle (3 templates)
+  - Video/Reels/Shorts: V1 screen walkthrough 30–60s, V2 animated tip 15–30s, V3 data story
+    30–45s, V4 "how I'd do it" plan 45–90s, V5 full tutorial 2–5min, V6 YouTube thumbnail
+    spec (6 templates — all no-face-on-camera: screen recordings, voiceover, animated text)
+  - LinkedIn: L1 build-in-public, L2 data insight, L3 professional take (3 templates)
+  - Facebook groups: F1 helpful answer (1 template)
+  - Stories: ST1 article launch sequence 3–5 stories, ST2 quick poll (2 templates)
+  - Article-to-social adaptation cheat sheet mapping article types to template selections.
+  Every template includes structure, worked example, audience/pillar/funnel tags, and a
+  plug-and-play AI image generation prompt with brand palette hex values and Inter font.
+
+- **New file `10B_SOCIAL_CALENDAR.md`** — the timing layer. Article Echo Protocol: 7-step
+  post-publish promotion sequence (Day 0 launch → Day 1 insight pull → Day 3 carousel/Reel →
+  Day 5 group share → Day 7 video companion → Day 14 secondary insight → Day 30+ evergreen
+  reshare) with a decision tree (flagship = full echo, segment = abbreviated, quick = minimum).
+  Weekly posting grid with batching rules and time-of-day guidelines per timezone (BST for
+  Bangladesh, AEST for Australia, UTC for global). Three segment-specific 12-month content
+  calendars:
+  - [EXAM] AMC: 5-stage preparation arc (Decision → Planning → Execution → Final Stretch →
+    Post-exam) rotated monthly, with per-month themes + suggested posts + template references.
+    AMC is year-round (Feb–Nov, Pearson VUE) so the calendar is cycle-driven, not event-driven.
+  - [MBBS-BD] Bangladesh: anchored to the May and November BMDC professional exam windows.
+    Includes ASCII timeline of the academic cycle, restrained-tone reminders baked into every
+    month, reduced posting during exam weeks (max 1–2/week, no product CTAs), BMDC event
+    triggers table (exam announcements, results, supplementary windows), supplementary content
+    sensitivity rules. BMDC facts sourced from FEATURES.md.
+  - [UNI] University: dual-hemisphere model covering both Northern (Jan–Dec) and Southern
+    (Feb–Nov) semester cycles with hemisphere-neutral content where possible.
+  Cross-segment evergreen rotation (study technique topics + product feature showcase).
+  Paid promotion triggers with hard stop-rules (no ads during exam weeks, no ads to broken
+  product). Master 12-month seasonal calendar (single-view grid of all three segments).
+  Content repurposing cycle with 6-week minimum reshare gap.
+
+- **New file `10C_PAID_PROMOTION.md`** — advertising playbook for a bootstrapped founder.
+  Spend-readiness checklist (5 yes/no gates — if any is "no," spend $0). Budget framework:
+  4 tiers from $0 to $500/month ($0 is the default; most months should be here). Platform
+  selection by segment with 2026 cost benchmarks: Bangladesh Facebook CPM $1–3 (a $50/month
+  budget is meaningful); Australia CPM $8–18 (spend only with strong creative). Three
+  funnel-stage campaign types (Awareness → Consideration → Conversion) with Meta objectives,
+  creative types, CTAs, and 40/30/30 budget split. Audience targeting blueprints per segment
+  using Meta Advantage+ 2026 approach (signals over micromanagement): [EXAM] AMC (Australia
+  + IMG source countries, medical interests), [MBBS-BD] (Bangladesh, 18–28, medical college
+  interests, maximum restraint in ad copy, BDT pricing only, no ads during exam weeks),
+  [UNI] (English-speaking countries, 18–25, university interests). Retargeting setup: 4
+  pixel-based audiences (all visitors, article readers, landing page visitors, registration
+  started-didn't-complete) with frequency caps and creative rules. Ad creative rules aligned
+  with files 02 and 11 (same banned words, same CTA language). 3-second test for every
+  creative. 5-variation testing framework. Ad specs for Meta, YouTube, LinkedIn. KPI
+  benchmarks: cost per registration < $5 global / < $1 Bangladesh; registration rate > 5%
+  landing page / > 2% article; CTR > 1% feed. Five ready-to-run campaign playbooks: boost
+  a top post, promote a new article, retarget site visitors, pre-exam MBBS-BD push, YouTube
+  pre-roll. Monthly paid review checklist.
+
+- **New file `10D_CREATIVE_PRODUCTION.md`** — the production manual for creating social media
+  visual assets. Brand asset reference card (all hex values, font weights, logo files, visual
+  style rules in one place). AI image generation master prompt library: base prefix block +
+  8 prompt templates (P1 stat card, P2 myth/fact, P3 tip card, P4 before/after, P5 carousel
+  slides, P6 YouTube thumbnail, P7 Reel cover frame, P8 LinkedIn document cover) — each with
+  exact brand hex values, Inter font specs, and logo placement. Three video production methods
+  for no-face-on-camera: Method A animated text (Canva/CapCut, easiest), Method B screen
+  recording with voiceover, Method C hybrid (branded frames + screen recording, most polished).
+  Voiceover recording tips. Three complete video scripts with second-by-second VISUAL/VOICEOVER
+  columns: 30-second animated tip, 60-second screen walkthrough, 45-second data story. Canva
+  workflow guide (one-time brand kit setup + per-post 6-step workflow). Screenshot production
+  guide with demo data specs per audience (fictional names, realistic plans). Background music
+  guide (lo-fi ambient, 15–20% volume, calmer for MBBS-BD). Asset naming convention
+  ({platform}_{format}_{audience}_{topic-slug}_{date}.{ext}). 12-item pre-publish quality
+  checklist. Production time estimates (stat card = 10 min, carousel = 20 min, Reel = 30–45
+  min, full article echo set = 90–120 min).
+
+- **No existing files edited.** These are net-new supplementary files. The social media voice
+  rules in `02_BRAND_VOICE.md` §6.3 remain authoritative; files 10–10D expand on them with
+  platform-specific depth. The pricing copy rules in `11_PRICING_MODEL.md` §7 remain
+  authoritative; files 10–10D inherit and enforce them.
+
+---
+
 ## 2026-06-24 — New segment landing page: /amc-study-planner [EXAM]
 - Built `public/amc-study-planner.html` on the marketing-page recipe (dark hero), SoftwareApplication + BreadcrumbList + FAQPage schema. AMC MCQ facts sourced from amc.org.au. Freemium copy (30-day full access free, no card); no prices hard-coded. Passed the Pre-Delivery Technical Gate.
 - Registered the slug `/amc-study-planner` in file 12 (distinct from the deleted test page `/amc-mcq-study-planner`).

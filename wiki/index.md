@@ -21,6 +21,13 @@ updated: 2026-06-25
 - [[Pricing Strategy]] — Freemium model: 30-day full access → Free Starter or Pro, per-mode pricing
 - [[SEO Remediation 2026-06]] — Live-site audit: 8 fixes (2 P0 SPA-fallthrough URLs losing AMC traffic), owners + execution order
 
+## Social & Marketing
+- [[Social Playbook]] — Platform registry, audience mapping, voice adaptation, content pillars, posting cadence, UTM tracking
+- [[Social Content Formats]] — 21 reusable post templates (S1–S4, C1–C3, V1–V6, L1–L3, F1, ST1–ST2) with AI image prompts
+- [[Social Calendar]] — Article Echo Protocol, weekly grid, 3 segment calendars (AMC/MBBS-BD/UNI), paid triggers, repurposing cycle
+- [[Paid Promotion]] — Spend-readiness checklist, $0–500/mo budget tiers, segment targeting blueprints, retargeting, 5 campaign playbooks
+- [[Creative Production]] — AI image prompt library (P1–P8), 3 video production methods, complete scripts, Canva workflow, asset naming
+
 ## Brand & Design
 - [[Brand Voice]] — Five voice pillars, per-audience copy rules, banned/approved phrases
 - [[Brand Visual System]] — Logo, colors (navy/blue/purple/cyan), typography, spacing, components, dark mode

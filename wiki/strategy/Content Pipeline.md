@@ -1,7 +1,7 @@
 ---
 title: Content Pipeline
 type: strategy
-sources: [raw/brain-v1/05_CONTENT_PIPELINE.md]
+sources: [raw/brain-v1/05_CONTENT_PIPELINE.md, raw/brain-v1/10B_SOCIAL_CALENDAR.md]
 created: 2026-06-24
 updated: 2026-06-25
 ---
@@ -31,6 +31,9 @@ Master content queue rebuilt 2026-06-22 from SERP research. 41 pieces across 4 f
 
 ## Status Tracking
 Each piece has: status (idea/queued/writing/deployed), target keyword, SERP difficulty (qualitative), audience segment, wave assignment.
+
+## Social Distribution
+Content flows from this pipeline into social via the [[Social Playbook]]. Every published article triggers the **Article Echo Protocol** (see [[Social Calendar]]) — a 7-step promotion sequence from Day 0 to Day 30+. Use the **Article-to-Social Cheat Sheet** in [[Social Content Formats]] to pick the right template per article type and platform. Content pillars: Study Technique (40%), Exam Strategy (25%), Product in Action (20%), Community & Credibility (15%). Minimum cadence: 3–4 FB, 3–5 IG, 1–2 YT, 2–3 LinkedIn posts/week.
 
 ## Live Article Maintenance
 Published articles tracked with: URL, publish date, last refresh, performance notes.

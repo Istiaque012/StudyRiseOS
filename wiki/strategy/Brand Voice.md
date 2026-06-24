@@ -1,9 +1,9 @@
 ---
 title: Brand Voice
 type: strategy
-sources: [raw/brain-v1/02_BRAND_VOICE.md]
+sources: [raw/brain-v1/02_BRAND_VOICE.md, raw/brain-v1/10_SOCIAL_PLAYBOOK.md]
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-06-25
 ---
 
 # Brand Voice
@@ -31,5 +31,8 @@ structured, evidence-based, built for, designed around, your progress, your plan
 ## Copy Rules by Surface
 - Landing pages: benefit-led, concise
 - Blog articles: helpful-expert tone, direct-answer openings
-- Social: approachable but never casual
+- Social: approachable but never casual — see [[Social Playbook]] for per-platform register adaptation
 - In-app: functional, clear, zero fluff
+
+## Social-Specific Banned Phrases
+In addition to the main banned list, these are banned in social copy: "Link in bio" (as entire CTA), "Drop a 🔥 if you agree", "Tag someone who needs this", "No one is talking about this", "This changed everything", "STOP scrolling". Full social voice rules in [[Social Playbook]].

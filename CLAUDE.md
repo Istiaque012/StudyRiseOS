@@ -112,25 +112,29 @@ When the user says "lint the wiki" or "health check":
 
 ### END-OF-SESSION CAPTURE RITUAL
 
-After **any** work session (not just INGEST), append to `wiki/log.md` in this exact format:
+At the **end of every session** — not only INGEST, but any work session — before reporting done, append to `wiki/log.md` in this exact format:
 
 ```
 ## [YYYY-MM-DD] type | summary | files
 ```
 
-Where `type` ∈ {ingest, deploy, fix, audit, strategy}, `summary` is one line, and `files` lists wiki pages created/updated. Then update `wiki/index.md` if new pages were created.
+Where `type` ∈ {ingest, deploy, fix, audit, strategy, refactor}, `summary` is one line, and `files` lists wiki pages created or changed during the session. Then: if any new wiki page was created, update `wiki/index.md` with its catalog entry.
+
+This is mandatory. No session ends without a log entry.
 
 ### PROMOTION RULE
 
-When the same correction has been made 3+ times (grep `wiki/log.md` to check), promote it:
+Before starting work, grep `wiki/log.md` for recurring corrections. If the **same correction** appears 3+ times, promote it before doing anything else:
 
-1. Add the rule to the relevant numbered RULEBOOK file in `raw/brain-v1/` (01–12)
+1. Add the rule to the relevant numbered RULEBOOK file in `raw/brain-v1/` (01–12), written once, authoritatively
 2. Log the promotion in `raw/brain-v1/CHANGELOG.md`
-3. Replace the restated copies in wiki pages with a `[[wikilink]]` to the authoritative rule
+3. Replace the scattered restatements in wiki pages with a `[[wikilink]]` to the new authoritative rule
+
+The point: a repeated fix becomes a permanent rule so it stops recurring.
 
 ### LINT CADENCE
 
-Run the LINT operation at the start of each month **or** after 5+ ingest operations, whichever comes first.
+Run the LINT operation at the start of each calendar month **or** after 5+ ingest/deploy operations since the last lint, whichever comes first. The agent checks the most recent `## [YYYY-MM-DD] audit` entry in `wiki/log.md` to decide if one is due.
 
 ---
 
@@ -196,7 +200,7 @@ When the user says "write [article]" or "generate [content piece]":
 ---
 
 ## What Claude Should NOT Do
-- Never modify files in `raw/` — they are immutable sources
+- Never modify immutable source material — this includes `raw/competitor-clips/`, `raw/keyword-research/`, `raw/social-references/`, `raw/app-dev-sources/`, `raw/assets/`, and genuine verbatim transcripts like `docs/_archive/BMDC_MBBS_Curriculum_2021_Clean_StudyRise.md`. The numbered RULEBOOK files in `raw/brain-v1/` (01–12, 10A–10D, and companions like `CHANGELOG.md`) and maintained MBBS docs (e.g. `00_MBBS_INDEX.md`, `01_BMDC_CURRICULUM_REFERENCE.md`) are content-project-owned and may be edited — the PROMOTION RULE depends on this
 - Never delete wiki pages — mark them as `status: archived` instead
 - Never guess medical or BMDC curriculum facts — flag as `⚠️ NEEDS VERIFICATION`
 - Never create pages without updating `index.md` and `log.md`

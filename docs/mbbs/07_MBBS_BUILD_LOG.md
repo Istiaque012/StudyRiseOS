@@ -195,14 +195,4 @@ Recalibrate the v2.0 projection's INPUTS to the corrected gates (R11 — keep ar
 
 ---
 <!-- docnav-related -->
-### Related docs
-- [StudyRise — MBBS Bangladesh Module · Document Index (Redesign R3.0)](00_MBBS_INDEX.md)
-- [BMDC MBBS Curriculum 2021 — Reference & Seed Authority](01_BMDC_CURRICULUM_REFERENCE.md)
-- [StudyRise — MBBS Bangladesh Module · Product Specification (R3.0)](02_MBBS_PRODUCT_SPEC.md)
-- [MBBS Bangladesh Module — Current State Ledger (R3.0)](03_MBBS_CURRENT_STATE.md)
-- [MBBS Bangladesh Module — Data Model (R3.0)](04_MBBS_DATA_MODEL.md)
-- [MBBS Bangladesh Module — Decision Log (R3.0)](05_MBBS_DECISIONS.md)
-- [MBBS Bangladesh Module — Build Sessions (R3.0)](06_MBBS_BUILD_SESSIONS.md)
-- [BMDC Curriculum (original) → moved (de-duplicated)](Original%20BMDC_MBBS_Curriculum_2021_Clean_StudyRise.md)
-
-_Up: [docs index](../README.md) · [CLAUDE.md](../../CLAUDE.md)_
+_See the [index](../README.md) for the full file map · [CLAUDE.md](../../CLAUDE.md)_

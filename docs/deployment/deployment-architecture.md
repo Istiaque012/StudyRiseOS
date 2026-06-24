@@ -476,5 +476,4 @@ The current architecture is **correct and well-separated**. Security headers on 
 
 ---
 <!-- docnav-related -->
-### Related docs
-_Up: [docs index](../README.md) · [CLAUDE.md](../../CLAUDE.md)_
+_See the [index](../README.md) for the full file map · [CLAUDE.md](../../CLAUDE.md)_

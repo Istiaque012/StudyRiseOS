@@ -172,14 +172,4 @@ _See `06_MBBS_BUILD_SESSIONS.md` for which session ships which delta._
 
 ---
 <!-- docnav-related -->
-### Related docs
-- [StudyRise — MBBS Bangladesh Module · Document Index (Redesign R3.0)](00_MBBS_INDEX.md)
-- [BMDC MBBS Curriculum 2021 — Reference & Seed Authority](01_BMDC_CURRICULUM_REFERENCE.md)
-- [StudyRise — MBBS Bangladesh Module · Product Specification (R3.0)](02_MBBS_PRODUCT_SPEC.md)
-- [MBBS Bangladesh Module — Current State Ledger (R3.0)](03_MBBS_CURRENT_STATE.md)
-- [MBBS Bangladesh Module — Decision Log (R3.0)](05_MBBS_DECISIONS.md)
-- [MBBS Bangladesh Module — Build Sessions (R3.0)](06_MBBS_BUILD_SESSIONS.md)
-- [MBBS Bangladesh Module — Build Log (R3.0)](07_MBBS_BUILD_LOG.md)
-- [BMDC Curriculum (original) → moved (de-duplicated)](Original%20BMDC_MBBS_Curriculum_2021_Clean_StudyRise.md)
-
-_Up: [docs index](../README.md) · [CLAUDE.md](../../CLAUDE.md)_
+_See the [index](../README.md) for the full file map · [CLAUDE.md](../../CLAUDE.md)_

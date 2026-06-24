@@ -1111,10 +1111,4 @@ _Landing page: complete — start from Prompt 1 (globals) or jump to any screen_
 
 ---
 <!-- docnav-related -->
-### Related docs
-- [StudyRise — Framer Motion Animation Plan](ANIMATION_PLAN.md)
-- [StudyRise — Brand Kit](BRAND_KIT.md)
-- [Deployment Architecture → moved (superseded)](Deployment%20Architecture.md)
-- [StudyRise — Full Feature Specification](FEATURES.md)
-
-_Up: [docs index](../README.md) · [CLAUDE.md](../../CLAUDE.md)_
+_See the [index](../README.md) for the full file map · [CLAUDE.md](../../CLAUDE.md)_

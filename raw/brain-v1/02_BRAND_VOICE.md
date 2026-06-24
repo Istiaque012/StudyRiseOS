@@ -427,10 +427,10 @@ The five pillars stay constant. The **register** — level of formality, assumed
   - Every post earns its CTA. If the content doesn't naturally lead to StudyRise, don't force one. Helpful posts without a CTA build more trust than constant shilling.
 
 - **Social bio templates:**
-  - **Primary/general:** `StudyRise — Study smarter. Not longer. | Smart study planning & tracking for serious students. Try it free — www.studyrise.app`
-  - **[EXAM]-focused account:** `StudyRise — Built for doctors studying across borders. | AMC · PLAB · USMLE study planning. Try it free — www.studyrise.app`
-  - **[MBBS-BD]-focused:** `StudyRise — Study planning for every MBBS phase. | BMDC 2021 curriculum. Day-by-day scheduling. Try it free — www.studyrise.app`
-  - **[UNI]-focused:** `StudyRise — Finals don't plan themselves. | Study planner + tracker for university students. Try it free — www.studyrise.app`
+  - **Primary/general:** `StudyRise — Study smarter. Not longer. | Smart study planning & tracking for serious students. Try it free — [www.studyrise.app](https://www.studyrise.app)`
+  - **[EXAM]-focused account:** `StudyRise — Built for doctors studying across borders. | AMC · PLAB · USMLE study planning. Try it free — [www.studyrise.app](https://www.studyrise.app)`
+  - **[MBBS-BD]-focused:** `StudyRise — Study planning for every MBBS phase. | BMDC 2021 curriculum. Day-by-day scheduling. Try it free — [www.studyrise.app](https://www.studyrise.app)`
+  - **[UNI]-focused:** `StudyRise — Finals don't plan themselves. | Study planner + tracker for university students. Try it free — [www.studyrise.app](https://www.studyrise.app)`
 
 ### 6.4 Email
 

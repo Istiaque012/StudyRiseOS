@@ -10,7 +10,7 @@
 
 ## What StudyRise Is
 
-StudyRise (**www.studyrise.app**) is a smart study-planning and tracking platform for serious students. It combines spaced repetition, Pomodoro-based scheduling, progress analytics, and AI-powered study advice into one structured system.
+StudyRise (**[www.studyrise.app](https://www.studyrise.app)**) is a smart study-planning and tracking platform for serious students. It combines spaced repetition, Pomodoro-based scheduling, progress analytics, and AI-powered study advice into one structured system.
 
 **Tagline:** *Plan Today. Rise Tomorrow.*
 **Brand archetype:** The Intelligent Coach — serious enough for a high-stakes exam, warm enough to keep someone going at 11pm.

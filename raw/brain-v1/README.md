@@ -4,7 +4,7 @@
 > **Docs ·** part of the [StudyRise docs index](../README.md) · repo index [CLAUDE.md](../../CLAUDE.md)
 
 
-> This is your operating manual. It explains what this project is, how to set it up once, and the exact things to say to get content researched, written, and ready to publish — plus how to run SEO checks. Keep it short to read; the real depth lives in the 25 numbered files.
+> This is your operating manual. It explains what this project is, how to set it up once, and the exact things to say to get content researched, written, and ready to publish — plus how to run SEO checks. Keep it short to read; the real depth lives in the twelve numbered files (01–12) plus the 10A–10D companions.
 
 ---
 
@@ -19,7 +19,7 @@ You stay in control: it does the thinking and the building; you do the final `gi
 ## One-Time Setup (do this once)
 
 1. **Create the project** in Claude — name it **"StudyRise Content & SEO"**.
-2. **Upload all 26 files** (the 25 numbered files + this README) to the project's knowledge.
+2. **Upload all files** (the twelve numbered files 01–12, the 10A–10D companions, + this README) to the project's knowledge.
 3. **Paste this into Project Instructions:**
 
    > You are StudyRise's content and SEO operation. Always read `01_CONTEXT.md` first, then use the other numbered knowledge files as directed within them. Produce complete, ready-to-deploy HTML for articles with the Google Analytics snippet (G-R38JK89PP5) always included. Research with the connected tools before writing anything factual. Consult before executing on non-trivial work; never guess a medical or curriculum fact. Follow the brand voice exactly.

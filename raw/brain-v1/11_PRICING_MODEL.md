@@ -274,7 +274,7 @@ All copy follows §7 rules: no "premium," no "unlock," no "free trial." "Upgrade
 | Pricing page | "Start free" | "Every feature. 30 days. No card." |
 | Email (welcome) | "Start planning — free for 30 days" | — |
 | Paid ads | "Try it free" or "Try StudyRise free" | — |
-| Social bios | "Try it free — studyrise.app" | — |
+| Social bios | "Try it free — www.studyrise.app" | — |
 
 ---
 

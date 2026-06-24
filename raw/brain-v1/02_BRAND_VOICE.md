@@ -29,7 +29,7 @@ This file governs every word StudyRise publishes. It is split into seven section
 **What it is:** A smart study-planning and tracking platform for serious students.  
 **Brand archetype:** The Intelligent Coach  
 **One-sentence personality:** Serious enough for a doctor sitting a licensing exam, warm enough to keep a first-year going at 11 pm.  
-**Font:** Inter  
+**Fonts:** Inter (body) · Plus Jakarta Sans (display/headings) · JetBrains Mono (overlines/labels)  
 **Colours:** Deep Navy `#0D1B3E` · Purple `#7C3AED` → Cyan `#06B6D4` → Blue `#2563EB` gradient  
 **Author byline:** "StudyRise" (unless specified otherwise)
 
@@ -427,10 +427,10 @@ The five pillars stay constant. The **register** — level of formality, assumed
   - Every post earns its CTA. If the content doesn't naturally lead to StudyRise, don't force one. Helpful posts without a CTA build more trust than constant shilling.
 
 - **Social bio templates:**
-  - **Primary/general:** `StudyRise — Study smarter. Not longer. | Smart study planning & tracking for serious students. Try it free — studyrise.app`
-  - **[EXAM]-focused account:** `StudyRise — Built for doctors studying across borders. | AMC · PLAB · USMLE study planning. Try it free — studyrise.app`
-  - **[MBBS-BD]-focused:** `StudyRise — Study planning for every MBBS phase. | BMDC 2021 curriculum. Day-by-day scheduling. Try it free — studyrise.app`
-  - **[UNI]-focused:** `StudyRise — Finals don't plan themselves. | Study planner + tracker for university students. Try it free — studyrise.app`
+  - **Primary/general:** `StudyRise — Study smarter. Not longer. | Smart study planning & tracking for serious students. Try it free — www.studyrise.app`
+  - **[EXAM]-focused account:** `StudyRise — Built for doctors studying across borders. | AMC · PLAB · USMLE study planning. Try it free — www.studyrise.app`
+  - **[MBBS-BD]-focused:** `StudyRise — Study planning for every MBBS phase. | BMDC 2021 curriculum. Day-by-day scheduling. Try it free — www.studyrise.app`
+  - **[UNI]-focused:** `StudyRise — Finals don't plan themselves. | Study planner + tracker for university students. Try it free — www.studyrise.app`
 
 ### 6.4 Email
 

@@ -34,6 +34,8 @@ Tracks known issues:
 ## Recent Link Additions
 - `amc-mcq-study-plan` → `amc-mcq-pass-standard-2026` (inline link on "nudged that standard slightly higher")
 - `amc-mcq-pass-standard-2026` → `amc-mcq-study-plan` (two inline links: "AMC MCQ study plan" in sections 4 and 7)
+- **New page `/study-planner`** (2026-06-25): inbound from nav, footer (Product), and 3 blog "related" cards (`amc-mcq-study-plan`, `how-to-make-a-study-plan`, `spaced-repetition-for-exams`); outbound to `/amc-study-planner`, `/pricing`, `/features`. No longer orphaned.
+- **301 (D-series resolved):** `/blog/how-to-pass-amc-mcq-in-4-months` → `/blog/amc-mcq-study-plan`.
 
 ## Rules
 - New articles must link to at least 2 existing articles

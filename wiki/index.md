@@ -19,6 +19,7 @@ updated: 2026-06-25
 - [[Content Pipeline]] — Master content queue: 41 pieces across 4 flagship pillars and 5 clusters, wave plan
 - [[Internal Link Strategy]] — Page registry, link graph, hub-and-spoke architecture, link-debt ledger
 - [[Pricing Strategy]] — Freemium model: 30-day full access → Free Starter or Pro, per-mode pricing
+- [[SEO Remediation 2026-06]] — Live-site audit: 8 fixes (2 P0 SPA-fallthrough URLs losing AMC traffic), owners + execution order
 
 ## Brand & Design
 - [[Brand Voice]] — Five voice pillars, per-audience copy rules, banned/approved phrases

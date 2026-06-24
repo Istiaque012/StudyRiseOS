@@ -35,10 +35,18 @@ Each piece has: status (idea/queued/writing/deployed), target keyword, SERP diff
 ## Live Article Maintenance
 Published articles tracked with: URL, publish date, last refresh, performance notes.
 
-### Deployed Articles
+### Deployed Articles & Landing Pages
 | Slug | Title | Audience | Keyword | Published | Status |
 |---|---|---|---|---|---|
 | amc-mcq-pass-standard-2026 | The 2026 AMC MCQ Pass-Standard Change — What It Means for You | [EXAM] | amc mcq pass standard 2026 | 2026-06-25 | deployed |
+| study-planner | Study Planner App — Turn Your Syllabus Into a Daily Plan | ALL | study planner | 2026-06-25 | deployed |
+| amc-study-planner | AMC MCQ Study Planner App for IMGs | [EXAM] | amc mcq study planner | (live) | deployed |
+
+> `/study-planner` ⚠️ uses `/og-image.png` as a fallback OG — make a dedicated `study-planner-og.webp` per [[Image Protocol]] when convenient. Links out to `/amc-study-planner`; linked from nav, footer, and 3 blog "related" cards.
+
+### Resolved (from [[SEO Remediation 2026-06]])
+- ~~`/amc-mcq-study-planner` landing page~~ — not needed; `/amc-study-planner` already exists and serves this transactional intent. Ghost slug removed from routing.
+- ✅ Slug rename 301 shipped: `/blog/how-to-pass-amc-mcq-in-4-months` → `/blog/amc-mcq-study-plan`.
 
 ## Backlog
 PLAB 1 and USMLE content parked until Exam Mode gains traction in those markets.

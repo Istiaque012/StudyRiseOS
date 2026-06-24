@@ -35,6 +35,9 @@ _(To be populated as competitor analyses are ingested — see [[wiki/entities/]]
 ## Regional SEO
 MBBS-BD content targets Bangladesh specifically. Exam content targets Australia (AMC), UK (PLAB), US (USMLE).
 
+## Active Remediation
+See [[SEO Remediation 2026-06]] for the live-site audit (2026-06-24). Key standing lesson: renamed/retired URLs must get a 301 in `vercel.json` and every real page must be a static page (not an SPA catch-all fallthrough that returns a homepage canonical). Two P0s — the AMC blog slug rename and the `/amc-mcq-study-planner` ghost sitemap entry — are currently bleeding the site's only non-branded traffic.
+
 ## Maintenance Cadence
 - Evergreen content: review quarterly
 - Data-driven content: refresh when data changes

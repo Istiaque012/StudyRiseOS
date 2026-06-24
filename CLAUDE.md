@@ -1,7 +1,7 @@
 # StudyRiseOS — LLM Wiki Schema
 
 > This file tells Claude how the wiki is structured and how to operate on it.
-> Co-evolved by Istiaque and Claude. Last updated: 2026-06-24.
+> Co-evolved by Istiaque and Claude. Last updated: 2026-06-25.
 
 ---
 
@@ -14,7 +14,7 @@ Your curated collection of source documents. Claude reads from these but **never
 
 | Subfolder | What goes here |
 |---|---|
-| `raw/brain-v1/` | Original StudyRise Content & SEO Brain files (01–12) + MBBS docs + planning + deployment |
+| `raw/brain-v1/` | Original StudyRise Content & SEO Brain files — twelve numbered files (01–12) plus companions (10A–10D) + MBBS docs + planning + deployment |
 | `raw/competitor-clips/` | Web-clipped competitor articles (use Obsidian Web Clipper) |
 | `raw/keyword-research/` | GSC exports, Semrush dumps, keyword spreadsheets |
 | `raw/social-references/` | Social media posts, campaign screenshots, marketing references |
@@ -109,6 +109,28 @@ When the user says "lint the wiki" or "health check":
 5. Identify gaps — important topics mentioned but lacking their own page
 6. Suggest new sources to look for
 7. Report findings and fix what can be fixed automatically
+
+### END-OF-SESSION CAPTURE RITUAL
+
+After **any** work session (not just INGEST), append to `wiki/log.md` in this exact format:
+
+```
+## [YYYY-MM-DD] type | summary | files
+```
+
+Where `type` ∈ {ingest, deploy, fix, audit, strategy}, `summary` is one line, and `files` lists wiki pages created/updated. Then update `wiki/index.md` if new pages were created.
+
+### PROMOTION RULE
+
+When the same correction has been made 3+ times (grep `wiki/log.md` to check), promote it:
+
+1. Add the rule to the relevant numbered RULEBOOK file in `raw/brain-v1/` (01–12)
+2. Log the promotion in `raw/brain-v1/CHANGELOG.md`
+3. Replace the restated copies in wiki pages with a `[[wikilink]]` to the authoritative rule
+
+### LINT CADENCE
+
+Run the LINT operation at the start of each month **or** after 5+ ingest operations, whichever comes first.
 
 ---
 

@@ -90,3 +90,72 @@ Avoid:        stethoscope-on-keyboard, fake AI glow, stock clichés, GIF.
 - Add row to `05_CONTENT_PIPELINE.md`.
 - New file `13_HELP_CENTER.md` (spec) + `CHANGELOG.md` entry.
 - Wiki page `wiki/content/Help Center.md` + `wiki/index.md` entry.
+
+---
+
+## Page: `/help/exam/build-your-plan` (Session 3)
+
+**File:** `public/help/exam/build-your-plan.html`
+**H1:** Build your Exam Mode study plan
+**Title tag (49):** Build Your Study Plan in StudyRise Exam Mode | Help
+**Meta desc (150):** How StudyRise Exam Mode builds your study plan — pick your exam type, set your dates and study load, and generate a paced plan across three phases for AMC, PLAB or USMLE.
+
+### §4 QA gate — PASS
+- [x] GA `G-R38JK89PP5` in `<head>`, unaltered.
+- [x] All URL fields `https://www.studyrise.app/…`; only bare `studyrise.app` is the intentional brand-disambiguation prose mention.
+- [x] Canonical self-referential (`/help/exam/build-your-plan`).
+- [x] CTAs → `?auth=register`; no `/login`|`/register`.
+- [x] Exactly one `<h1>`.
+- [x] Banned-words scan clean (no premium/unlock/free trial/upgrade-in-body/AI tells).
+- [x] Trial window not mentioned on this page — compliant sentence not required.
+- [x] JSON-LD: TechArticle + BreadcrumbList + HowTo + FAQPage. No BlogPosting.
+- [x] FAQ schema ↔ visible parity (4 Q&As).
+- [x] Title ≤60 (49); meta desc ≤155 (150).
+- [x] Illustrations are HTML/CSS mocks (`<figure role="img">`, captioned *Illustration*): wizard step-1 exam-type cards, step-2 load sliders + weekly-hours line, step-3 summary, 3-phase timeline. No `<img>`/JS/motion.
+- [x] Absent from blog hub/category/feed.
+- [x] No orphan: links to hub + getting-started/subjects-and-tasks/daily-study-session; hub links back.
+- [x] Shell partials via includes, injected verbatim.
+- [x] `python3 build_site.py` green.
+
+### Links
+- Outbound: `/features` (CTA), `/blog/amc-mcq-study-plan` (AMC exam content).
+- Internal: hub, getting-started, subjects-and-tasks, spaced-repetition, mock-exams.
+- Conversion: `?auth=register`.
+
+### Link-debt / forward-refs
+- **PLAB 1 and USMLE Step 1 have no dedicated content page yet** — named in copy without a dead link (only AMC content exists). Wire when PLAB/USMLE exam content ships.
+- `spaced-repetition` (S4), `mock-exams` (S5), `subjects-and-tasks` (S3) — resolve within Wave 1.
+
+---
+
+## Page: `/help/exam/subjects-and-tasks` (Session 3)
+
+**File:** `public/help/exam/subjects-and-tasks.html`
+**H1:** Add, edit, and delete subjects and tasks
+**Title tag (48):** Subjects & Tasks in StudyRise Exam Mode | Help
+**Meta desc (147):** How to add, edit, reorder, and delete subjects and tasks in StudyRise Exam Mode, plus the task-detail drawer for tuning due dates, hours, and checklists.
+
+### §4 QA gate — PASS
+- [x] GA `G-R38JK89PP5` in `<head>`, unaltered.
+- [x] All URL fields `https://www.studyrise.app/…`.
+- [x] Canonical self-referential (`/help/exam/subjects-and-tasks`).
+- [x] CTAs → `?auth=register`; no `/login`|`/register`.
+- [x] Exactly one `<h1>`.
+- [x] Banned-words scan clean.
+- [x] Trial window not mentioned — compliant sentence not required.
+- [x] JSON-LD: TechArticle + BreadcrumbList + HowTo + FAQPage. No BlogPosting.
+- [x] FAQ schema ↔ visible parity (4 Q&As).
+- [x] Title ≤60 (48); meta desc ≤155 (147).
+- [x] Illustrations are HTML/CSS mocks: Settings→Subjects list (reorder/edit/remove), task row + add fields, task-detail drawer with step checklist. No `<img>`/JS.
+- [x] Absent from blog hub/category/feed.
+- [x] No orphan: links to hub + build-your-plan/plan-and-schedule/settings; hub links back.
+- [x] Shell partials injected verbatim.
+- [x] `python3 build_site.py` green.
+
+### Links
+- Outbound: `/features` (CTA).
+- Internal: hub, build-your-plan, plan-and-schedule (S6), staying-on-track (S6), settings (S9), daily-study-session (S4).
+- Conversion: `?auth=register`.
+
+### Link-debt / forward-refs
+- `plan-and-schedule`, `staying-on-track` (S6), `settings` (S9) — resolve within Wave 1.

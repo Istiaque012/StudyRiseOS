@@ -286,7 +286,7 @@ fails, fix — don't defer. Paste the completed checklist into the PR per page.
 | 0 | Recon, routing, scaffolding, template skeleton | ✅ done | 2026-07-02 | `vercel.json` `/help` rewrites live (catch-all still last); dirs created; template skeleton in scratch (not shipped); `build_site.py` green, `check_blog.py` ignores `/help/`. Website commit `ec8440e`. |
 | 1 | Cornerstone `getting-started` | ✅ done | 2026-07-02 | Full 9-section page + TechArticle/BreadcrumbList/HowTo/FAQPage, 11 shot placeholders + alt, OG brief. Passes §4. Website commit `a1fbd23`. Forward-refs to build-your-plan/daily-study-session/mock-exams/dashboard noted in PR notes. |
 | 2 | Help home `/help` + Exam hub `/help/exam` | ✅ done | 2026-07-02 | Home + hub built (CollectionPage+BreadcrumbList); no orphan. **Hub currently lists only the original 4 articles under 2 groups — must be re-grouped to the 6 headings / ~15 articles as later sessions ship them.** Website commit `88b71a2`; Content OS commit `fe0c112` (log + PR notes). |
-| 3 | build-your-plan + subjects-and-tasks | ⬜ todo | — | — |
+| 3 | build-your-plan + subjects-and-tasks | ✅ done | 2026-07-02 | Both built w/ HTML/CSS mocks (no screenshots), full schema, §4 gate + build green. Hub re-grouped to §3 headings (Getting started / Your daily study loop) and `hasPart` now lists all 7 S3–S5 articles. **Link-debt:** only AMC exam content is live — AMC MCQ links to `/blog/amc-mcq-study-plan`; PLAB 1 + USMLE Step 1 named without dead links until their content ships. Committed to `content/help-exam-wave1`. |
 | 4 | daily-study-session + spaced-repetition | ⬜ todo | — | — |
 | 5 | logging-questions + mock-exams | ⬜ todo | — | — |
 | 6 | plan-and-schedule + staying-on-track | ⬜ todo | — | — |

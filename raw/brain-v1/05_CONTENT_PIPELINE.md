@@ -213,29 +213,29 @@ Branded terms are low-competition and are the on-ramp from every cluster. (The p
 
 ## HELP CENTER — EXAM MODE WAVE 1 [EXAM] · `/help/*` (help type — never in blog listings)
 
-Built on website branch `content/help-exam-wave1` — 🟨 = built, pending merge/routing/indexing.
+Merged to `main` and live 2026-07-02 (PR #61). All 18 URLs verified serving static HTML with self-referential canonical, one h1, GA. Sitemap registered in GSC; awaiting organic crawl (URLs still `unknown to Google` on go-live day). ⚠️ Shared OG card `help-og.webp` not yet generated (Istiaque). Inbound links from `/features` + `/blog/amc-mcq-study-plan` in PR #62.
 Spec: `13_HELP_CENTER.md`. All illustrations are HTML/CSS mocks (no screenshots); shared OG `help-og.webp`.
 
 | Page | URL | Audience | Type | Status |
 |---|---|---|---|---|
-| Help home | `/help` | [ALL] | help-hub | 🟨 built, pending merge |
-| Exam Mode hub | `/help/exam` | [EXAM] | help-hub | 🟨 built, pending merge |
-| ★ Getting started (cornerstone) | `/help/exam/getting-started` | [EXAM] | help | 🟨 built, pending merge |
-| Build your plan | `/help/exam/build-your-plan` | [EXAM] | help | 🟨 built, pending merge |
-| Subjects and tasks | `/help/exam/subjects-and-tasks` | [EXAM] | help | 🟨 built, pending merge |
-| Your daily study session | `/help/exam/daily-study-session` | [EXAM] | help | 🟨 built, pending merge |
-| Spaced repetition | `/help/exam/spaced-repetition` | [EXAM] | help | 🟨 built, pending merge |
-| Logging questions | `/help/exam/logging-questions` | [EXAM] | help | 🟨 built, pending merge |
-| Mock exams | `/help/exam/mock-exams` | [EXAM] | help | 🟨 built, pending merge |
-| Plan views & editing | `/help/exam/plan-and-schedule` | [EXAM] | help | 🟨 built, pending merge |
-| Staying on track | `/help/exam/staying-on-track` | [EXAM] | help | 🟨 built, pending merge |
-| Dashboard | `/help/exam/dashboard` | [EXAM] | help | 🟨 built, pending merge |
-| Readiness & projections | `/help/exam/readiness-and-projections` | [EXAM] | help | 🟨 built, pending merge |
-| History | `/help/exam/history` | [EXAM] | help | 🟨 built, pending merge |
-| Analytics & reports (Pro) | `/help/exam/analytics-and-reports` | [EXAM] | help | 🟨 built, pending merge |
-| Revision Sprint (Pro) | `/help/exam/revision-sprint` | [EXAM] | help | 🟨 built, pending merge |
-| Settings reference | `/help/exam/settings` | [EXAM] | help | 🟨 built, pending merge |
-| Exam Mode FAQ | `/help/exam/faq` | [EXAM] | help | 🟨 built, pending merge |
+| Help home | `/help` | [ALL] | help-hub | ✅ live 2026-07-02 |
+| Exam Mode hub | `/help/exam` | [EXAM] | help-hub | ✅ live 2026-07-02 |
+| ★ Getting started (cornerstone) | `/help/exam/getting-started` | [EXAM] | help | ✅ live 2026-07-02 |
+| Build your plan | `/help/exam/build-your-plan` | [EXAM] | help | ✅ live 2026-07-02 |
+| Subjects and tasks | `/help/exam/subjects-and-tasks` | [EXAM] | help | ✅ live 2026-07-02 |
+| Your daily study session | `/help/exam/daily-study-session` | [EXAM] | help | ✅ live 2026-07-02 |
+| Spaced repetition | `/help/exam/spaced-repetition` | [EXAM] | help | ✅ live 2026-07-02 |
+| Logging questions | `/help/exam/logging-questions` | [EXAM] | help | ✅ live 2026-07-02 |
+| Mock exams | `/help/exam/mock-exams` | [EXAM] | help | ✅ live 2026-07-02 |
+| Plan views & editing | `/help/exam/plan-and-schedule` | [EXAM] | help | ✅ live 2026-07-02 |
+| Staying on track | `/help/exam/staying-on-track` | [EXAM] | help | ✅ live 2026-07-02 |
+| Dashboard | `/help/exam/dashboard` | [EXAM] | help | ✅ live 2026-07-02 |
+| Readiness & projections | `/help/exam/readiness-and-projections` | [EXAM] | help | ✅ live 2026-07-02 |
+| History | `/help/exam/history` | [EXAM] | help | ✅ live 2026-07-02 |
+| Analytics & reports (Pro) | `/help/exam/analytics-and-reports` | [EXAM] | help | ✅ live 2026-07-02 |
+| Revision Sprint (Pro) | `/help/exam/revision-sprint` | [EXAM] | help | ✅ live 2026-07-02 |
+| Settings reference | `/help/exam/settings` | [EXAM] | help | ✅ live 2026-07-02 |
+| Exam Mode FAQ | `/help/exam/faq` | [EXAM] | help | ✅ live 2026-07-02 |
 
 Flip these rows to ✅ live in Session 12 after live-route check (self-referential canonicals, no SPA fallthrough).
 
@@ -264,6 +264,7 @@ These were live opportunities in earlier planning but fall outside the clusters 
 | 2026-06-24 | Built | Blog hub + study-skills + mbbs + university-courses | Hub (Blog schema, featured=what-is-studyrise + 3-card grid + notify). study-skills lists 2 live articles. mbbs + university-courses are noindex empty states until first article. Sitemap corrected: added /blog, /blog/study-skills, and the live-but-missing /blog/medical-licensing-exams and /blog/amc-mcq-study-plan. |
 
 | 2026-07-02 | Built | Help Center Exam Wave 1 (18 pages) | `/help` home + `/help/exam` hub + 15 articles + faq on branch `content/help-exam-wave1`; sitemap registers all; HTML/CSS mocks per 13_HELP_CENTER.md; PR open, indexing gated on Session 12. |
+| 2026-07-02 | Live | Help Center Exam Wave 1 merged (PR #61) | Session 12: squash-merged to `main`, Vercel deployed. All 18 URLs verified live (200, self-canonical, one h1, GA). Sitemap already registered in GSC (write-submit blocked by read-only scope; not needed). Index status `unknown to Google` on go-live day — organic crawl pending; UI "Request Indexing" is a manual step. Inbound links (PR #62) await merge. ⚠️ `help-og.webp` still to be generated. |
 
 _Keep this log current. When you publish, change the row's Status to ✅ Live, add the real slug, and add a line here._
 

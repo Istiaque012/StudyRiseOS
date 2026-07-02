@@ -120,3 +120,15 @@ updated: 2026-06-25
   - 10 app development pages
   - 1 deployment page
 - Entities and Keywords sections empty — awaiting first competitor clips and keyword research ingestion
+
+## [2026-07-01] audit | Downloads organization scan blocked before moves | files: none
+
+## [2026-07-01] audit | Google Drive organization audit and duplicate cleanup plan | files: Google Drive Organization Audit 2026-07-01.md, wiki/index.md
+
+## [2026-07-02] strategy | Rewrote EXAM_HELP_CENTER_BUILD_PLAN into 7 sessionised Claude Code sessions (S0 recon/routing → S6 indexing); grounded paths against real repos, locked 4 decisions (own vercel.json /help rewrite, placeholders-first, H1, AMC link), corrected to two-repo model (website exec + Content OS brain/wiki) | files: EXAM_HELP_CENTER_BUILD_PLAN.md
+
+## [2026-07-02] refactor | Help Center S0: branched content/help-exam-wave1, added /help rewrites to vercel.json (above /app.html catch-all), created public/help/{exam,images/exam-getting-started} dirs, captured help template skeleton; build_site.py green, check_blog.py leaves /help alone | files: (website repo) vercel.json, public/help/ dirs
+
+## [2026-07-02] deploy | Help Center S1: built cornerstone /help/exam/getting-started.html (first-run journey: account → wizard → tour → Day-0 dashboard → first Today session → FAQ), full schema TechArticle+BreadcrumbList+HowTo+FAQPage, 11 screenshot placeholders w/ exact filenames+alt, OG brief; passes §4 gate + build_site.py green; PR notes captured | files: (website) public/help/exam/getting-started.html; (Content OS) docs/_audit/HELP_WAVE1_PR_NOTES.md
+
+## [2026-07-02] deploy | Help Center S2: built help home /help/index.html (3 mode cards — Exam live, MBBS+University coming-soon/unlinked, most-read links) and Exam hub /help/exam/index.html (Wave-1 articles grouped Getting started / Daily use, other-modes coming-soon); both CollectionPage+BreadcrumbList; cornerstone now non-orphan (home↔hub↔cornerstone); §4 gate green, build_site.py green | files: (website) public/help/index.html, public/help/exam/index.html

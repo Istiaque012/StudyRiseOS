@@ -184,3 +184,47 @@ dropped the stray "Contact" nav link from the two planner pages, standardised fo
 include model, re-adopted 2026-07-02) + menu line; updated 13_HELP_CENTER §3 footer default;
 updated wiki Site Shell System (rules 5–6 + new canonical section) and Help Center status.
 Website: PR #65 (branch content/unify-nav-footer-shell).
+
+## [2026-07-03] fix | Resolved PR #65 merge conflicts (main squash-merge drift) | (website repo only — no wiki pages changed)
+PR #65 went CONFLICTING after #63/#64 were squash-merged into `main` while their originating
+commits still lived on the PR 65 branch, colliding across `templates/partials/footer.html` +
+11 pages (`blog.html`, `features.html`, 9 blog articles) that all render the shared footer.
+Resolved via merge (not rebase, to preserve history): `footer.html` kept PR 65's canonical
+`<h3>` Product heading (its intentional `h4→h3` change) — Help Center + Study Planner links
+were already present, so main's comment-only diff added nothing new. The 11 page files took
+PR 65's side outright (`git checkout --ours`) since its unified footer already contained
+main's only contribution (the Help Center link) — verified no information lost. Unrelated
+in-progress dev-os files (`FILE_MAP.md`, `docs/dev-os/*`) were stashed before the merge and
+restored after, untouched by the conflict resolution. Validated with `python3 build_site.py`
+(0 errors, 0 pages rewritten — merge result byte-identical to what the build injects). Merge
+commit `12dbfd9` pushed to `content/unify-nav-footer-shell`; PR 65 confirmed CONFLICTING →
+MERGEABLE. Website: PR #65, same branch as the 2026-07-02 refactor entry above.
+
+## [2026-07-03] fix | CLAUDE.md/AGENTS.md cross-repo paths corrected to match the 2026-07-02 repo consolidation | CLAUDE.md, AGENTS.md
+The root schema (`CLAUDE.md`) and its Codex mirror (`AGENTS.md`) still pointed at retired repo
+locations — `~/Desktop/StudyRise` for the website+app repo, and `~/Downloads/StudyRIse Main/StudyRIseOS`
+for the wiki repo — even though the 2026-07-02 PR #63 entry above already recorded both moves.
+Only the narrative log knew; the schema itself was stale. Fixed both files (Content Generation
+Workflow intro, GENERATE step 3, GENERATE step 6, and the Cross-Repo References block) to point at
+`~/Downloads/StudyRIse Main/StudyRise App` (website+app, same GitHub remote `Istiaque012/StudyRise`)
+and `~/Downloads/StudyRIse Main/StudyRise Content OS` (wiki, GitHub remote name unchanged —
+`Istiaque012/StudyRiseOS.git` — only the local folder was renamed). Also noted in passing: the
+`StudyRise App` checkout is currently 2 commits behind `origin/main` and has uncommitted local
+changes (`FILE_MAP.md`, `HelpSupportTab.jsx`) — not fixed here, flagged for Istiaque. Bumped both
+files' "Last updated" date. No wiki pages (`wiki/*`) needed changes — this was a schema-only fix.
+
+## [2026-07-03] fix | Removed stale root-level site-shell duplicates; App is now the only source of truth | wiki/strategy/Site Shell System.md, raw/brain-v1/10_SITE_SHELL.md, raw/brain-v1/08_DEPLOYMENT_GUIDE.md
+Diffed the root-level `footer.html`, `nav.html`, `studyrise-core.css`, `studyrise-chrome.js`
+(last touched 2026-06-21/24) against their live counterparts in the App repo
+(`templates/partials/*.html`, `public/assets/*`). Three of four had drifted: App had already
+shipped the `/login` + `/register` clean-URL SEO fix (footer + nav no longer link
+`?auth=login`/`?auth=register`) and an in-progress 3-column article-rail CSS layout, neither
+reflected here. Root cause: these copies existed for a pre-Claude-Code workflow — manually
+re-uploading them to a separate content project's knowledge base so an AI session without
+filesystem access could reference the shell. That workflow is obsolete now that Claude Code
+reads/writes both repos directly, so keeping a manually-refreshed local copy adds staleness
+risk with no upside. Deleted all four root files. Updated [[Site Shell System]] and the two
+`raw/brain-v1` rulebook sections (`10_SITE_SHELL.md`, `08_DEPLOYMENT_GUIDE.md`) that still
+described the old re-upload pattern, redirecting to "read live from the App repo" instead.
+No wiki page content (beyond Site Shell System's note) needed changes. Website: no changes —
+this was Content OS documentation/cleanup only.

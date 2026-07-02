@@ -1,7 +1,7 @@
 # StudyRiseOS — LLM Wiki Schema
 
-> This file tells Claude how the wiki is structured and how to operate on it.
-> Co-evolved by Istiaque and Claude. Last updated: 2026-07-03.
+> This file tells Codex how the wiki is structured and how to operate on it.
+> Co-evolved by Istiaque and Codex. Last updated: 2026-07-03.
 
 ---
 
@@ -10,7 +10,7 @@
 Three layers:
 
 ### 1. `raw/` — Immutable Sources
-Your curated collection of source documents. Claude reads from these but **never modifies** them.
+Your curated collection of source documents. Codex reads from these but **never modifies** them.
 
 | Subfolder | What goes here |
 |---|---|
@@ -22,7 +22,7 @@ Your curated collection of source documents. Claude reads from these but **never
 | `raw/assets/` | Images from clipped articles |
 
 ### 2. `wiki/` — LLM-Generated Wiki
-Claude owns this layer entirely. Claude creates pages, updates them when new sources arrive, maintains cross-references, and keeps everything consistent. You read it; Claude writes it.
+Codex owns this layer entirely. Codex creates pages, updates them when new sources arrive, maintains cross-references, and keeps everything consistent. You read it; Codex writes it.
 
 | Subfolder | What lives here |
 |---|---|
@@ -32,8 +32,8 @@ Claude owns this layer entirely. Claude creates pages, updates them when new sou
 | `wiki/strategy/` | Synthesized strategy pages — SEO strategy, marketing strategy, growth plans |
 | `wiki/app-dev/` | App development wiki — architecture, features, decisions, build status |
 
-### 3. This file (`CLAUDE.md`) — The Schema
-Tells Claude how the wiki is structured, what conventions to follow, and what workflows to run.
+### 3. This file (`AGENTS.md`) — The Schema
+Tells Codex how the wiki is structured, what conventions to follow, and what workflows to run.
 
 ---
 
@@ -141,7 +141,7 @@ Run the LINT operation at the start of each calendar month **or** after 5+ inges
 ## Special Files
 
 ### `wiki/index.md`
-Content-oriented catalog. Every wiki page listed with link, one-line summary, and category. Claude updates this on every ingest. **Read this first** when answering any query.
+Content-oriented catalog. Every wiki page listed with link, one-line summary, and category. Codex updates this on every ingest. **Read this first** when answering any query.
 
 ### `wiki/log.md`
 Chronological, append-only. Each entry:
@@ -199,7 +199,7 @@ When the user says "write [article]" or "generate [content piece]":
 
 ---
 
-## What Claude Should NOT Do
+## What Codex Should NOT Do
 - Never modify immutable source material — this includes `raw/competitor-clips/`, `raw/keyword-research/`, `raw/social-references/`, `raw/app-dev-sources/`, `raw/assets/`, and genuine verbatim transcripts like `docs/_archive/BMDC_MBBS_Curriculum_2021_Clean_StudyRise.md`. The numbered RULEBOOK files in `raw/brain-v1/` (01–12, 10A–10D, and companions like `CHANGELOG.md`) and maintained MBBS docs (e.g. `00_MBBS_INDEX.md`, `01_BMDC_CURRICULUM_REFERENCE.md`) are content-project-owned and may be edited — the PROMOTION RULE depends on this
 - Never delete wiki pages — mark them as `status: archived` instead
 - Never guess medical or BMDC curriculum facts — flag as `⚠️ NEEDS VERIFICATION`

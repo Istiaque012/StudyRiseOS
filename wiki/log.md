@@ -163,3 +163,10 @@ PR #61 squash-merged to `main` (CI "Web app" red = pre-existing Supabase-env tes
 - Added "Help Center → /help" to the Product column of the sitewide footer: shared partial `templates/partials/footer.html` (re-injects into all 18 help pages via build_site.py) + 6 frozen marketing pages (landing, features, pricing, blog, study-planner, amc-study-planner) whose footers lack the include anchor.
 - Shipped shared OG card `public/help/images/help-og.webp` (1731×909, ~1.9:1) — every /help/* og:image previously 404'd. Website PR #63 opened.
 - Header nav left unchanged (marketing-focused); in-app contextual links remain a follow-up in the app UI.
+
+## [2026-07-02] deploy | Help Center footer default sitewide — 9 blog pages + required-default rule (PR #64) | wiki/content/Help Center.md, raw/brain-v1/13_HELP_CENTER.md
+PR #63 covered the shared partial + 6 marketing pages but missed the 9 frozen blog-page footers
+(hand-authored, no shell anchor). Added `Help Center → /help` to all 9 via targeted regex insert;
+0 pages now missing. Marked the link a **required default** in `templates/partials/footer.html`
+(comment) and in the Help Center spec §3, so future footers — shell-managed or frozen — keep it.
+Website: PR #64 (branch content/help-footer-blog-pages), build 0 errors. Docs updated here.

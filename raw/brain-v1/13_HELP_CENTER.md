@@ -37,6 +37,13 @@ Clone the site shell **verbatim** (nav/footer partials, `studyrise-core.css`, `s
 GA `G-R38JK89PP5`, `www` canonical + OG/Twitter). Reference implementation:
 `public/help/exam/mock-exams.html`. The help delta:
 
+> **Footer default:** `Help Center → /help` is a **required** link in the Product footer column on
+> **every** page — shell-managed and frozen alike. The shared partial `templates/partials/footer.html`
+> carries it (so future shell-generated pages inherit it); frozen footers (marketing + blog pages,
+> which lack the `<!--#include footer-->` anchor) must be edited directly. Never author a new footer
+> without it.
+
+
 1. Visible **breadcrumb** `Home › Help › Exam Mode › {Article}` + `BreadcrumbList` JSON-LD.
 2. `doc-badge` ("Exam Mode guide") so it reads as product docs, not a blog post.
 3. `.answer` lead block — the whole page's answer in 2–4 sentences before anything else.

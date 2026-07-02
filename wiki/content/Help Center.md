@@ -44,10 +44,15 @@ rows ✅ live. Canonical repo consolidated to `~/Downloads/StudyRIse Main/StudyR
 `~/Desktop/StudyRise` copy is retired). **Discoverability + OG shipped in PR #63:** "Help Center
 → /help" added to the sitewide footer Product column (shared partial re-injects the 18 help
 pages; the 6 frozen marketing-page footers edited directly), and the shared OG card
-`help-og.webp` (1731×909, ~1.9:1) added — previously every help `og:image` 404'd. **Open:**
-(1) PR #63 awaits merge; (2) GSC "Request Indexing" is a manual UI click (no public API);
-(3) in-app contextual links (Exam Mode UI → relevant article) remain a follow-up in the app UI;
-(4) header nav intentionally left marketing-only. Wave 4 = MBBS help; Wave 5 = University help.
+`help-og.webp` (1731×909, ~1.9:1) added — previously every help `og:image` 404'd. **PR #63 merged.**
+
+**Footer now sitewide (PR #64):** `Help Center → /help` is a **required default** in the Product
+footer column on **every** page. PR #63 covered the shared partial + 6 frozen marketing pages; PR #64
+adds the **9 frozen blog pages** it missed and marks the link required in `footer.html` + the spec
+(`raw/brain-v1/13_HELP_CENTER.md` §3). Verified 0 pages missing; future shell-generated pages inherit
+it automatically. **Open:** (1) GSC "Request Indexing" is a manual UI click (no public API);
+(2) in-app contextual links (Exam Mode UI → relevant article) remain a follow-up in the app UI;
+(3) header nav intentionally left marketing-only. Wave 4 = MBBS help; Wave 5 = University help.
 
 ## Sources
 - `raw/brain-v1/13_HELP_CENTER.md` (spec)

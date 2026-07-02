@@ -206,3 +206,45 @@ Avoid:        stethoscope-on-keyboard, fake AI glow, stock clichés, GIF.
 
 ### Link-debt / forward-refs
 - `analytics-and-reports` (S8), `settings` (S9) — resolve within Wave 1.
+
+---
+
+## Page: `/help/exam/logging-questions` (Session 5)
+
+**File:** `public/help/exam/logging-questions.html`
+**H1:** Logging questions in Exam Mode
+**Title tag (49):** Logging Questions in StudyRise Exam Mode | Help
+**Meta desc (152):** How to log question-bank practice in StudyRise Exam Mode — the log form, paste-results import, flagging a topic for spaced-repetition review, and the quick logger.
+
+### §4 QA gate — PASS
+- [x] GA unaltered; URL fields `www`; canonical self-referential; CTAs `?auth=register`; one `<h1>`; banned-words clean; trial not mentioned.
+- [x] JSON-LD TechArticle + BreadcrumbList + HowTo + FAQPage; FAQ schema↔visible parity (4 Q&As).
+- [x] Title ≤60 (49); meta ≤155 (152).
+- [x] Mocks (HTML/CSS, `role="img"`, *Illustration*): question log form + accuracy badge, Paste-results parser (pasted text → editable table), Flag-for-review control. No `<img>`/JS.
+- [x] Absent from blog surfaces; no orphan (links hub + mock-exams/spaced-repetition/daily-study-session; hub links back); shell verbatim; build green.
+
+### Links
+- Outbound `/features` (CTA); internal hub, mock-exams, spaced-repetition, daily-study-session; conversion `?auth=register`. No forward-ref debt.
+
+---
+
+## Page: `/help/exam/mock-exams` (Session 5)
+
+**File:** `public/help/exam/mock-exams.html`
+**H1:** Logging mock exams
+**Title tag (50):** Logging Mock Exams in StudyRise Exam Mode | Help
+**Meta desc (140):** How to log mock exams in StudyRise Exam Mode — the mock form, the readiness bands, the per-subject breakdown, and your score trend and average pace.
+
+### §4 QA gate — PASS
+- [x] GA unaltered; URL fields `www`; canonical self-referential; CTAs `?auth=register`; one `<h1>`; banned-words clean; trial not mentioned.
+- [x] JSON-LD TechArticle + BreadcrumbList + HowTo + FAQPage; FAQ schema↔visible parity (4 Q&As).
+- [x] Facts per tutorial §9: bands Unsafe<55 / Improving 55–60 / Borderline 61–64 / Exam-ready ≥65; default pace 72s. (Stop-and-ask if live app differs.)
+- [x] Title ≤60 (50); meta ≤155 (140).
+- [x] Mocks: mock log form + live band, readiness bands, per-subject breakdown + total-mismatch warning, score trend vs 65% line + pace indicator. No `<img>`/JS.
+- [x] Absent from blog surfaces; no orphan (links hub + logging-questions/readiness-and-projections/analytics-and-reports; hub links back); shell verbatim; build green.
+
+### Links
+- Outbound `/features` (CTA); internal hub, logging-questions, readiness-and-projections (S7), analytics-and-reports (S8), revision-sprint (S9); conversion `?auth=register`.
+
+### Link-debt / forward-refs
+- `readiness-and-projections` (S7), `analytics-and-reports` (S8), `revision-sprint` (S9) — resolve within Wave 1.

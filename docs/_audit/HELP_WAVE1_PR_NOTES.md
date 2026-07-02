@@ -159,3 +159,50 @@ Avoid:        stethoscope-on-keyboard, fake AI glow, stock clichés, GIF.
 
 ### Link-debt / forward-refs
 - `plan-and-schedule`, `staying-on-track` (S6), `settings` (S9) — resolve within Wave 1.
+
+---
+
+## Page: `/help/exam/daily-study-session` (Session 4)
+
+**File:** `public/help/exam/daily-study-session.html`
+**H1:** Your daily study session on Today
+**Title tag (48):** Your Daily Study Session in StudyRise | Help
+**Meta desc (154):** Run a study day in StudyRise Exam Mode — generate a day plan of 50/10 blocks, use the block timers, work the sidebar tools, and log your day honestly in the Log modal.
+
+### §4 QA gate — PASS
+- [x] GA `G-R38JK89PP5` unaltered; all URL fields `www`; canonical self-referential; CTAs `?auth=register`; one `<h1>`.
+- [x] Banned-words clean; trial window not mentioned (sentence not required).
+- [x] JSON-LD TechArticle + BreadcrumbList + HowTo + FAQPage; FAQ schema↔visible parity (4 Q&As); no BlogPosting.
+- [x] Title ≤60 (48); meta desc ≤155 (154).
+- [x] Mocks (HTML/CSS, `<figure role="img">`, *Illustration*): Today day-planner (50/10 blocks + fixed commitment), running block timer (red countdown ring), Log modal (Complete/Partial/Missed/Rest + questions), floating "+" quick-logger. No `<img>`/JS/motion.
+- [x] Absent from blog surfaces; no orphan (links hub + spaced-repetition/logging-questions/staying-on-track; hub links back); shell partials verbatim; build green.
+
+### Links
+- Outbound `/features` (CTA); internal hub, getting-started, spaced-repetition, logging-questions, staying-on-track (S6); conversion `?auth=register`.
+
+### Link-debt / forward-refs
+- `staying-on-track` (S6) — resolves within Wave 1.
+
+---
+
+## Page: `/help/exam/spaced-repetition` (Session 4)
+
+**File:** `public/help/exam/spaced-repetition.html`
+**H1:** Spaced repetition in Exam Mode
+**Title tag (49):** Spaced Repetition in StudyRise Exam Mode | Help
+**Meta desc (152):** How the StudyRise Exam Mode SR module works — the review queue, recall ratings and their 3/7/14/21-day intervals, the retention heatmap, and your SR settings.
+
+### §4 QA gate — PASS
+- [x] GA unaltered; all URL fields `www`; canonical self-referential; CTAs `?auth=register`; one `<h1>`.
+- [x] Banned-words clean; trial window not mentioned.
+- [x] JSON-LD TechArticle + BreadcrumbList + HowTo + FAQPage; FAQ schema↔visible parity (4 Q&As).
+- [x] SR intervals stated as tutorial: Blackout 3 / Hard 7 / Medium 14 / Easy 21 days. (Stop-and-ask if live app differs — matches tutorial §7.)
+- [x] Title ≤60 (49); meta desc ≤155 (152).
+- [x] Mocks: review queue (Subject-blue/Topic-purple + compliance ring), 4 grade buttons w/ intervals, retention heatmap, SR Settings panel w/ live preview. No `<img>`/JS.
+- [x] Absent from blog surfaces; no orphan (links hub + daily-study-session/logging-questions/settings; hub links back); shell verbatim; build green.
+
+### Links
+- Outbound `/features` (CTA); internal hub, daily-study-session, logging-questions, analytics-and-reports (S8), settings (S9); conversion `?auth=register`.
+
+### Link-debt / forward-refs
+- `analytics-and-reports` (S8), `settings` (S9) — resolve within Wave 1.

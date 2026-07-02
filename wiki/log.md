@@ -184,3 +184,31 @@ dropped the stray "Contact" nav link from the two planner pages, standardised fo
 include model, re-adopted 2026-07-02) + menu line; updated 13_HELP_CENTER §3 footer default;
 updated wiki Site Shell System (rules 5–6 + new canonical section) and Help Center status.
 Website: PR #65 (branch content/unify-nav-footer-shell).
+
+## [2026-07-03] fix | Resolved PR #65 merge conflicts (main squash-merge drift) | (website repo only — no wiki pages changed)
+PR #65 went CONFLICTING after #63/#64 were squash-merged into `main` while their originating
+commits still lived on the PR 65 branch, colliding across `templates/partials/footer.html` +
+11 pages (`blog.html`, `features.html`, 9 blog articles) that all render the shared footer.
+Resolved via merge (not rebase, to preserve history): `footer.html` kept PR 65's canonical
+`<h3>` Product heading (its intentional `h4→h3` change) — Help Center + Study Planner links
+were already present, so main's comment-only diff added nothing new. The 11 page files took
+PR 65's side outright (`git checkout --ours`) since its unified footer already contained
+main's only contribution (the Help Center link) — verified no information lost. Unrelated
+in-progress dev-os files (`FILE_MAP.md`, `docs/dev-os/*`) were stashed before the merge and
+restored after, untouched by the conflict resolution. Validated with `python3 build_site.py`
+(0 errors, 0 pages rewritten — merge result byte-identical to what the build injects). Merge
+commit `12dbfd9` pushed to `content/unify-nav-footer-shell`; PR 65 confirmed CONFLICTING →
+MERGEABLE. Website: PR #65, same branch as the 2026-07-02 refactor entry above.
+
+## [2026-07-03] fix | CLAUDE.md/AGENTS.md cross-repo paths corrected to match the 2026-07-02 repo consolidation | CLAUDE.md, AGENTS.md
+The root schema (`CLAUDE.md`) and its Codex mirror (`AGENTS.md`) still pointed at retired repo
+locations — `~/Desktop/StudyRise` for the website+app repo, and `~/Downloads/StudyRIse Main/StudyRIseOS`
+for the wiki repo — even though the 2026-07-02 PR #63 entry above already recorded both moves.
+Only the narrative log knew; the schema itself was stale. Fixed both files (Content Generation
+Workflow intro, GENERATE step 3, GENERATE step 6, and the Cross-Repo References block) to point at
+`~/Downloads/StudyRIse Main/StudyRise App` (website+app, same GitHub remote `Istiaque012/StudyRise`)
+and `~/Downloads/StudyRIse Main/StudyRise Content OS` (wiki, GitHub remote name unchanged —
+`Istiaque012/StudyRiseOS.git` — only the local folder was renamed). Also noted in passing: the
+`StudyRise App` checkout is currently 2 commits behind `origin/main` and has uncommitted local
+changes (`FILE_MAP.md`, `HelpSupportTab.jsx`) — not fixed here, flagged for Istiaque. Bumped both
+files' "Last updated" date. No wiki pages (`wiki/*`) needed changes — this was a schema-only fix.

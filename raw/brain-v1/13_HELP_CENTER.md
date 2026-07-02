@@ -38,10 +38,12 @@ GA `G-R38JK89PP5`, `www` canonical + OG/Twitter). Reference implementation:
 `public/help/exam/mock-exams.html`. The help delta:
 
 > **Footer default:** `Help Center → /help` is a **required** link in the Product footer column on
-> **every** page — shell-managed and frozen alike. The shared partial `templates/partials/footer.html`
-> carries it (so future shell-generated pages inherit it); frozen footers (marketing + blog pages,
-> which lack the `<!--#include footer-->` anchor) must be edited directly. Never author a new footer
-> without it.
+> **every** page — no exceptions. As of 2026-07-02 the whole site was unified onto the shared
+> partials via the `<!--#include-->` build model (see [[Site Shell System]]): every static page
+> carries the anchors and `build_site.py` injects `templates/partials/footer.html`, so Help Center
+> (and the full Product column: Features · Pricing · Study Planner · Blog · Help Center) propagates
+> everywhere automatically. The React legal pages (`/privacy`, `/terms`) carry it via
+> `MarketingFooter.jsx`. Never author a footer without it.
 
 
 1. Visible **breadcrumb** `Home › Help › Exam Mode › {Article}` + `BreadcrumbList` JSON-LD.

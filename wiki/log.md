@@ -170,3 +170,17 @@ PR #63 covered the shared partial + 6 marketing pages but missed the 9 frozen bl
 0 pages now missing. Marked the link a **required default** in `templates/partials/footer.html`
 (comment) and in the Help Center spec §3, so future footers — shell-managed or frozen — keep it.
 Website: PR #64 (branch content/help-footer-blog-pages), build 0 errors. Docs updated here.
+
+## [2026-07-02] refactor | Unify nav + footer shell across all pages — landing canonical, include model re-adopted (PR #65) | raw/brain-v1/10_SITE_SHELL.md, raw/brain-v1/13_HELP_CENTER.md, wiki/strategy/Site Shell System.md, wiki/content/Help Center.md
+Audited nav/footer across all 16 static pages: found drift into **4 nav variants and 5 footer
+variants** — the shared partials were "single source of truth" but weren't wired into any live
+page (all hand-authored). Fixed by wiring all 14 buildable pages to `<!--#include nav/footer-->`
+anchors so `build_site.py` injects the partials; set the partials equal to `landing.html`
+(canonical) — added **Study Planner** to the menu (it shipped), Help Center already present,
+dropped the stray "Contact" nav link from the two planner pages, standardised footer headings to
+`<h3>`. Synced the React legal-page replicas `MarketingNav.jsx` + `MarketingFooter.jsx`
+(`/privacy`, `/terms`). Verified: all 34 static pages byte-identical nav + footer; `build_site.py`
+0 errors; `npm run build` clean. Docs: rewrote 10_SITE_SHELL.md nav/footer rule (verbatim →
+include model, re-adopted 2026-07-02) + menu line; updated 13_HELP_CENTER §3 footer default;
+updated wiki Site Shell System (rules 5–6 + new canonical section) and Help Center status.
+Website: PR #65 (branch content/unify-nav-footer-shell).

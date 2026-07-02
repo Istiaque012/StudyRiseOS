@@ -50,7 +50,14 @@ pages; the 6 frozen marketing-page footers edited directly), and the shared OG c
 footer column on **every** page. PR #63 covered the shared partial + 6 frozen marketing pages; PR #64
 adds the **9 frozen blog pages** it missed and marks the link required in `footer.html` + the spec
 (`raw/brain-v1/13_HELP_CENTER.md` §3). Verified 0 pages missing; future shell-generated pages inherit
-it automatically. **Open:** (1) GSC "Request Indexing" is a manual UI click (no public API);
+it automatically.
+
+**Shell unified sitewide (PR #65):** the whole site was wired onto the shared partials via the
+`<!--#include-->` build model (see [[Site Shell System]]) — all 34 static pages (marketing + blog
++ help) now have **byte-identical** nav and footer matching `landing.html`, and the React legal
+pages (`/privacy`, `/terms`) synced via `MarketingNav.jsx`/`MarketingFooter.jsx`. This fixed prior
+drift (4 nav / 5 footer variants) and made the Help Center footer link a structural default, not a
+per-page edit. Canonical menu now includes **Study Planner** (shipped). **Open:** (1) GSC "Request Indexing" is a manual UI click (no public API);
 (2) in-app contextual links (Exam Mode UI → relevant article) remain a follow-up in the app UI;
 (3) header nav intentionally left marketing-only. Wave 4 = MBBS help; Wave 5 = University help.
 

@@ -32,21 +32,27 @@ partials verbatim. Change a colour → edit `core.css` once. Change a menu link 
 - **Nav & footer (verbatim):** pages reproduce `nav.html` and `footer.html` verbatim — see
   the rule below. There is no build step that swaps placeholders.
 
-### Nav & footer — reproduce the partials verbatim (no build step)
+### Nav & footer — shared partials injected via `<!--#include-->` (build model, updated 2026-07-02)
 
-Single source of truth: templates/partials/nav.html and templates/partials/footer.html.
-Both are uploaded into the content project's knowledge so the authoring chat reads them
-directly.
+Single source of truth: templates/partials/nav.html and templates/partials/footer.html in the
+**website (dev) repo**. Every static page must render nav/footer identical to `landing.html`.
 
-Authoring any page:
-- Copy the current nav.html verbatim as the first element inside <body>, and footer.html
-  verbatim just before the closing chrome.js script.
-- Never hand-write, summarise, or reconstruct nav/footer from memory.
-- Do NOT use `<!--#include nav-->` / `<!--#include footer-->` placeholders. There is no
-  build step that resolves them.
+Authoring any page (in the website repo):
+- Place `<!--#include nav-->` as the first element inside <body>, and `<!--#include footer-->`
+  just before the closing chrome.js script. Then run `python3 build_site.py` — it injects the
+  partials into every anchored page and re-syncs on every run, so a partial edit propagates
+  everywhere with zero drift. (`landing.html` and `app.html` are app-owned `SKIP_FILES`;
+  `landing.html` is the reference the partials are kept equal to.)
+- Never hand-write, summarise, or reconstruct nav/footer from memory. Do not leave a page's
+  nav/footer hand-authored — that is what caused the 4-nav / 5-footer drift fixed on 2026-07-02.
 - Footer logo is /assets/brand/studyrise-logo-deep.svg at 80px, directly above the exact
   tagline "Plan today. Rise tomorrow." There is no studyrise-logo-white.svg; if it
   appears, it is wrong.
+
+> **History:** the `#include`/build model was briefly retired in favour of verbatim copies,
+> which let pages drift. Re-adopted 2026-07-02 as the enforced single-source mechanism in the
+> dev repo (all 34 static pages now byte-identical). Build tooling lives in the dev repo, per
+> the scope note below.
 
 When a partial changes: update it in templates/partials/, re-upload the changed file to
 the content project's knowledge, then regenerate affected pages (or find-and-replace
@@ -57,12 +63,16 @@ so they cannot copy the partials. They wear the same chrome via the React replic
 src/components/Landing/MarketingNav.jsx + MarketingFooter.jsx (kept visually in sync with
 nav.html / footer.html). If you change the menu or footer, update those two components too.
 
-Current menu: Features · Pricing · Blog. (Study Planner and Contact were removed from the
-nav/footer until those pages exist — re-add a single <a> line in both marked spots of
-nav.html, and the matching footer columns, when they ship.)
+Current menu: **Features · Pricing · Study Planner · Blog** (updated 2026-07-02). Study
+Planner shipped (`/study-planner`), so it is now a permanent menu item — present in both
+marked spots of nav.html, the footer Product column, and the footer legal row. Contact stays
+out of the nav until a `/contact` destination page exists. **The canonical shell is
+`landing.html`** — every page's nav/footer must match it byte-for-byte.
 
-There is intentionally no build_site.py / build_blog.py include step in this content
-project. Build tooling, if ever needed, belongs to the development project.
+There is no build_site.py in *this content* project — build tooling lives in the **development
+project** (the website repo), where `build_site.py` resolves the `<!--#include-->` anchors from
+templates/partials/. That is where the shell is assembled; this project owns the partials'
+content and the rules above.
 
 ---
 

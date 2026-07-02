@@ -82,7 +82,7 @@ Non-article page types now exist alongside articles. Each is plain static HTML i
 | Category | `public/blog/{category}.html` | `/blog/{category}` |
 | Article | `public/blog/{slug}.html` | `/blog/{slug}` |
 
-Every page (all types) depends on two things being in place: the shared assets `/assets/studyrise-core.css` + `/assets/studyrise-chrome.js` existing, and the nav/footer partials being reproduced verbatim from `templates/partials/nav.html` and `templates/partials/footer.html` into each page — there is no `build_site.py` / build step in this content project. The two `/assets/` files are static and need no rewrite. Full spec: `10_SITE_SHELL.md`.
+Every page (all types) depends on two things being in place: the shared assets `/assets/studyrise-core.css` + `/assets/studyrise-chrome.js` existing, and the nav/footer partials at `templates/partials/nav.html` and `templates/partials/footer.html`. `build_site.py`, run in the **App repo**, injects the partials into every anchored page automatically — this is no longer a manual verbatim-copy process (see the 2026-07-03 amendment in `10_SITE_SHELL.md`). The two `/assets/` files are static and live only in the App repo; no copy is kept here.
 
 ---
 

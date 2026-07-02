@@ -3,12 +3,21 @@ title: Site Shell System
 type: strategy
 sources: [raw/brain-v1/10_SITE_SHELL.md]
 created: 2026-06-24
-updated: 2026-07-02
+updated: 2026-07-03
 ---
 
 # Site Shell System
 
 Shared shell for all static HTML pages: `studyrise-core.css` + `studyrise-chrome.js` + nav/footer partials.
+
+> **No local copy lives in this repo.** `footer.html`, `nav.html`, `studyrise-core.css`, and
+> `studyrise-chrome.js` used to be duplicated at this repo's root for a pre-Claude-Code workflow
+> (manually re-uploading them to a separate content project's knowledge). That workflow is
+> superseded — Claude Code now has direct filesystem access to both repos. The root-level copies
+> were removed 2026-07-03 after they were found ~2 weeks stale relative to the live files (missing
+> a shipped SEO fix and an in-progress layout change). **To see the current shell, read it live
+> from `StudyRise App`:** `public/assets/studyrise-core.css`, `public/assets/studyrise-chrome.js`,
+> `templates/partials/nav.html`, `templates/partials/footer.html`. Never trust a cached/local copy.
 
 ## 8 Golden Rules
 1. No re-declared tokens — use studyrise-core.css tokens only

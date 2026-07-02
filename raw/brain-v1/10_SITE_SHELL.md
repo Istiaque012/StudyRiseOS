@@ -20,8 +20,16 @@ Four shared files give every page the same look and behaviour:
 | `footer.html` | `/templates/partials/footer.html` | The footer markup, including the logo and tagline. |
 
 **The rule of thumb:** every page links the two `/assets/` files and reproduces the two
-partials verbatim. Change a colour → edit `core.css` once. Change a menu link → edit
-`nav.html` once, re-upload it to the content project's knowledge, then regenerate the pages.
+partials verbatim. Change a colour → edit `core.css` once, in the App repo. Change a menu
+link → edit `nav.html` once, in the App repo, then run `build_site.py` there.
+
+> **2026-07-03 amendment:** the four files above no longer have a local copy in this repo
+> (Content OS). They used to be duplicated at this repo's root for a pre-Claude-Code
+> workflow (manually re-uploading them to a separate content project's knowledge base).
+> That workflow is obsolete — Claude Code now reads and writes both repos directly. The
+> duplicates were removed after being found ~2 weeks stale. **Always read the current shell
+> live from the App repo** (`public/assets/*`, `templates/partials/*.html`) — never from a
+> cached copy anywhere in Content OS.
 
 ---
 
@@ -54,9 +62,9 @@ Authoring any page (in the website repo):
 > dev repo (all 34 static pages now byte-identical). Build tooling lives in the dev repo, per
 > the scope note below.
 
-When a partial changes: update it in templates/partials/, re-upload the changed file to
-the content project's knowledge, then regenerate affected pages (or find-and-replace
-across public/).
+When a partial changes: update it in templates/partials/ in the App repo, then run
+`python3 build_site.py` there — it re-injects the partial into every anchored page
+automatically (see history note above). No local copy is kept in Content OS to re-upload.
 
 React public pages (legal): /privacy and /terms render inside the SPA, not as static HTML,
 so they cannot copy the partials. They wear the same chrome via the React replicas

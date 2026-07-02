@@ -212,3 +212,19 @@ and `~/Downloads/StudyRIse Main/StudyRise Content OS` (wiki, GitHub remote name 
 `StudyRise App` checkout is currently 2 commits behind `origin/main` and has uncommitted local
 changes (`FILE_MAP.md`, `HelpSupportTab.jsx`) — not fixed here, flagged for Istiaque. Bumped both
 files' "Last updated" date. No wiki pages (`wiki/*`) needed changes — this was a schema-only fix.
+
+## [2026-07-03] fix | Removed stale root-level site-shell duplicates; App is now the only source of truth | wiki/strategy/Site Shell System.md, raw/brain-v1/10_SITE_SHELL.md, raw/brain-v1/08_DEPLOYMENT_GUIDE.md
+Diffed the root-level `footer.html`, `nav.html`, `studyrise-core.css`, `studyrise-chrome.js`
+(last touched 2026-06-21/24) against their live counterparts in the App repo
+(`templates/partials/*.html`, `public/assets/*`). Three of four had drifted: App had already
+shipped the `/login` + `/register` clean-URL SEO fix (footer + nav no longer link
+`?auth=login`/`?auth=register`) and an in-progress 3-column article-rail CSS layout, neither
+reflected here. Root cause: these copies existed for a pre-Claude-Code workflow — manually
+re-uploading them to a separate content project's knowledge base so an AI session without
+filesystem access could reference the shell. That workflow is obsolete now that Claude Code
+reads/writes both repos directly, so keeping a manually-refreshed local copy adds staleness
+risk with no upside. Deleted all four root files. Updated [[Site Shell System]] and the two
+`raw/brain-v1` rulebook sections (`10_SITE_SHELL.md`, `08_DEPLOYMENT_GUIDE.md`) that still
+described the old re-upload pattern, redirecting to "read live from the App repo" instead.
+No wiki page content (beyond Site Shell System's note) needed changes. Website: no changes —
+this was Content OS documentation/cleanup only.

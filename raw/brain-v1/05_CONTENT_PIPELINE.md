@@ -211,6 +211,34 @@ Branded terms are low-competition and are the on-ramp from every cluster. (The p
 
 ---
 
+## HELP CENTER — EXAM MODE WAVE 1 [EXAM] · `/help/*` (help type — never in blog listings)
+
+Built on website branch `content/help-exam-wave1` — 🟨 = built, pending merge/routing/indexing.
+Spec: `13_HELP_CENTER.md`. All illustrations are HTML/CSS mocks (no screenshots); shared OG `help-og.webp`.
+
+| Page | URL | Audience | Type | Status |
+|---|---|---|---|---|
+| Help home | `/help` | [ALL] | help-hub | 🟨 built, pending merge |
+| Exam Mode hub | `/help/exam` | [EXAM] | help-hub | 🟨 built, pending merge |
+| ★ Getting started (cornerstone) | `/help/exam/getting-started` | [EXAM] | help | 🟨 built, pending merge |
+| Build your plan | `/help/exam/build-your-plan` | [EXAM] | help | 🟨 built, pending merge |
+| Subjects and tasks | `/help/exam/subjects-and-tasks` | [EXAM] | help | 🟨 built, pending merge |
+| Your daily study session | `/help/exam/daily-study-session` | [EXAM] | help | 🟨 built, pending merge |
+| Spaced repetition | `/help/exam/spaced-repetition` | [EXAM] | help | 🟨 built, pending merge |
+| Logging questions | `/help/exam/logging-questions` | [EXAM] | help | 🟨 built, pending merge |
+| Mock exams | `/help/exam/mock-exams` | [EXAM] | help | 🟨 built, pending merge |
+| Plan views & editing | `/help/exam/plan-and-schedule` | [EXAM] | help | 🟨 built, pending merge |
+| Staying on track | `/help/exam/staying-on-track` | [EXAM] | help | 🟨 built, pending merge |
+| Dashboard | `/help/exam/dashboard` | [EXAM] | help | 🟨 built, pending merge |
+| Readiness & projections | `/help/exam/readiness-and-projections` | [EXAM] | help | 🟨 built, pending merge |
+| History | `/help/exam/history` | [EXAM] | help | 🟨 built, pending merge |
+| Analytics & reports (Pro) | `/help/exam/analytics-and-reports` | [EXAM] | help | 🟨 built, pending merge |
+| Revision Sprint (Pro) | `/help/exam/revision-sprint` | [EXAM] | help | 🟨 built, pending merge |
+| Settings reference | `/help/exam/settings` | [EXAM] | help | 🟨 built, pending merge |
+| Exam Mode FAQ | `/help/exam/faq` | [EXAM] | help | 🟨 built, pending merge |
+
+Flip these rows to ✅ live in Session 12 after live-route check (self-referential canonicals, no SPA fallthrough).
+
 ## ⛔ Backlog — NOT in this build (consciously parked)
 
 These were live opportunities in earlier planning but fall outside the clusters selected for this rebuild. Retained here so they aren't lost; promote into the tables above when scope expands.
@@ -234,6 +262,8 @@ These were live opportunities in earlier planning but fall outside the clusters 
 | 2026-06-22 | Rebuilt | entire article queue (#1–#41) | Retired old Tiers 1–5 (#1–#84); rebuilt from fresh SERP research into Flagships + Clusters A/B/D/E/F + Product set. PLAB & USMLE clusters moved to Backlog. Volumes pending (Semrush MCP plan-gated; GSC/Trends not connected). |
 | 2026-06-24 | Built | #2 spaced-repetition-for-exams | [ALL] Study Skills pillar. Gate passed. Cepeda 2008 + Ebbinghaus sourced. Live verify PASSED (200, own canonical, not app.html) → ✅. Inbound from #1 + #3 cross-linked. |
 | 2026-06-24 | Built | Blog hub + study-skills + mbbs + university-courses | Hub (Blog schema, featured=what-is-studyrise + 3-card grid + notify). study-skills lists 2 live articles. mbbs + university-courses are noindex empty states until first article. Sitemap corrected: added /blog, /blog/study-skills, and the live-but-missing /blog/medical-licensing-exams and /blog/amc-mcq-study-plan. |
+
+| 2026-07-02 | Built | Help Center Exam Wave 1 (18 pages) | `/help` home + `/help/exam` hub + 15 articles + faq on branch `content/help-exam-wave1`; sitemap registers all; HTML/CSS mocks per 13_HELP_CENTER.md; PR open, indexing gated on Session 12. |
 
 _Keep this log current. When you publish, change the row's Status to ✅ Live, add the real slug, and add a line here._
 

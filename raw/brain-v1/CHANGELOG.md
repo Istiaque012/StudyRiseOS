@@ -4,6 +4,28 @@ Most recent entry first.
 
 ---
 
+## 2026-07-02 — Help Center introduced at `/help/` + new file 13
+
+Exam Wave 1 of the public Help Center built in the website repo on branch
+`content/help-exam-wave1`: `/help` home, `/help/exam` hub, 15 Exam Mode articles
+(full feature coverage — cornerstone, plan building, subjects/tasks, daily loop, SR,
+questions, mocks, plan views, staying on track, dashboard, readiness/projections, history,
+analytics/report, revision sprint, settings, FAQ). Routing via `vercel.json` `/help` rewrites;
+all help URLs registered in `sitemap.xml` with image entries.
+
+- **New file `13_HELP_CENTER.md`** — the Help Center spec: architecture, article map, template
+  delta, schema rules (TechArticle/CollectionPage, FAQ parity), HTML/CSS-mock illustration
+  rules (no screenshots; only raster = shared `help-og.webp`), Pro-copy rule, and the standing
+  rule **help ≠ blog** (never in blog feeds/listings).
+- **`12_INTERNAL_LINKS.md`** — 18 help rows added to the Page Registry (new types `help`,
+  `help-hub`), help link-graph note, H-series link debt (post-merge inbound links; PLAB/USMLE
+  exam-content links deferred).
+- **`05_CONTENT_PIPELINE.md`** — Help Center section with all 18 pages at 🟨 built/pending-merge;
+  maintenance-log row added.
+- Indexing and inbound-link wiring are gated on the post-merge live-route check (plan Session 12).
+
+---
+
 ## 2026-06-25 — Social media brain: files 10, 10A, 10B, 10C, 10D
 
 Five new files completing the social media and paid promotion layer. These are supplementary

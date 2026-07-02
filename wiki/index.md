@@ -1,6 +1,6 @@
 ---
 title: Wiki Index
-updated: 2026-06-25
+updated: 2026-07-01
 ---
 
 # Wiki Index
@@ -20,6 +20,7 @@ updated: 2026-06-25
 - [[Internal Link Strategy]] — Page registry, link graph, hub-and-spoke architecture, link-debt ledger
 - [[Pricing Strategy]] — Freemium model: 30-day full access → Free Starter or Pro, per-mode pricing
 - [[SEO Remediation 2026-06]] — Live-site audit: 8 fixes (2 P0 SPA-fallthrough URLs losing AMC traffic), owners + execution order
+- [[Google Drive Organization Audit 2026-07-01]] — Drive cleanup plan: duplicate clusters, generated artifact cleanup, proposed folder system, deletion batches
 
 ## Social & Marketing
 - [[Social Playbook]] — Platform registry, audience mapping, voice adaptation, content pillars, posting cadence, UTM tracking
@@ -40,6 +41,7 @@ updated: 2026-06-25
 - [[SEO Technical Checklist]] — GA snippet, canonical, OG tags, JSON-LD schemas, Core Web Vitals targets
 - [[Pre-Deploy Checklist]] — Last gate: page served check, technical gate, AI-readability, sitemap, GSC
 - [[Audit Playbook]] — Monthly health check, AI-visibility check, targeted on-demand audits
+- [[Help Center]] — Product docs at /help/* (help ≠ blog); Exam Wave 1: 18 pages, full Exam Mode coverage, PR pending merge
 
 ## App Development
 

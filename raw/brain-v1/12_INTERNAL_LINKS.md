@@ -52,6 +52,35 @@ Type: landing · hub · category · article · legal · system
 | `/blog/university-courses` | Category: university | [UNI] | category | ⬜ planned | — | Footer link; build when volume warrants |
 | `/blog/study-skills` | Category: study skills | [ALL] | category | ⬜ planned | — | Footer link; build when volume warrants |
 | `/amc-study-planner` | AMC MCQ Study Planner | [EXAM] | Segment landing (SoftwareApplication) | ✅ live (200) | AMC study planner app | Built 2026-06-24; `public/amc-study-planner.html` |
+| `/help` | StudyRise Help Center | [ALL] | help-hub | 🟨 built (branch `content/help-exam-wave1`, pending merge) | studyrise help | Router page — 3 mode cards + most-read. Help ≠ blog: never in blog feed/hub/categories |
+| `/help/exam` | Exam Mode Help & Guides | [EXAM] | help-hub | 🟨 built (pending merge) | studyrise exam mode help | Mode hub; CollectionPage `hasPart` lists all 15 articles below |
+| `/help/exam/getting-started` | Getting Started with StudyRise Exam Mode | [EXAM] | help | 🟨 built (pending merge) | studyrise exam mode | ★ Cornerstone (S1) |
+| `/help/exam/build-your-plan` | Build your plan | [EXAM] | help | 🟨 built (pending merge) | studyrise exam study plan wizard | S3 |
+| `/help/exam/subjects-and-tasks` | Subjects and tasks | [EXAM] | help | 🟨 built (pending merge) | studyrise subjects tasks | S3 |
+| `/help/exam/daily-study-session` | Your daily study session | [EXAM] | help | 🟨 built (pending merge) | studyrise today study session | S4 |
+| `/help/exam/spaced-repetition` | Spaced repetition | [EXAM] | help | 🟨 built (pending merge) | studyrise spaced repetition | S4 |
+| `/help/exam/logging-questions` | Logging questions | [EXAM] | help | 🟨 built (pending merge) | studyrise log questions | S5 |
+| `/help/exam/mock-exams` | Mock exams | [EXAM] | help | 🟨 built (pending merge) | studyrise mock exams | S5 |
+| `/help/exam/plan-and-schedule` | Plan views and editing your schedule | [EXAM] | help | 🟨 built (pending merge) | studyrise plan views | S6 |
+| `/help/exam/staying-on-track` | Staying on track when you fall behind | [EXAM] | help | 🟨 built (pending merge) | studyrise reschedule study plan | S6 |
+| `/help/exam/dashboard` | Your Dashboard — mission control | [EXAM] | help | 🟨 built (pending merge) | studyrise dashboard | S7 |
+| `/help/exam/readiness-and-projections` | Readiness, projections, and Go/No-Go | [EXAM] | help | 🟨 built (pending merge) | studyrise readiness projection | S7 |
+| `/help/exam/history` | History — your study calendar | [EXAM] | help | 🟨 built (pending merge) | studyrise study history calendar | S8 |
+| `/help/exam/analytics-and-reports` | Analytics and the Progress Report | [EXAM] | help | 🟨 built (pending merge) | studyrise analytics progress report | S8 — whole screen is Pro |
+| `/help/exam/revision-sprint` | The Revision Sprint — your final month | [EXAM] | help | 🟨 built (pending merge) | studyrise revision sprint | S9 — Pro |
+| `/help/exam/settings` | Settings — every option explained | [EXAM] | help | 🟨 built (pending merge) | studyrise exam settings | S9 — reference article, maps to sibling guides |
+| `/help/exam/faq` | Exam Mode FAQ | [EXAM] | help | 🟨 built (pending merge) | studyrise exam mode faq | S10 — FAQPage schema ↔ visible parity |
+
+> **Type legend addition (2026-07-02):** `help` = product-docs article (TechArticle, not BlogPosting);
+> `help-hub` = Help Center router/hub (CollectionPage). Help pages never appear in the blog feed, blog hub,
+> or blog category listings — separate content type (see `13_HELP_CENTER.md`).
+>
+> **Help link graph (all on branch, hub-and-spoke):** `/help` → mode hub + most-read; `/help/exam` → all 15
+> articles; every article → `/help/exam` + 2–4 cluster siblings + ≥1 outbound (`/features`, `/contact`,
+> `/blog/amc-mcq-study-plan` from the cornerstone/build-your-plan) + a `?auth=register` CTA. No orphans.
+> **H-series link debt:** inbound links from `/features` and `/blog/amc-mcq-study-plan` to the cornerstone
+> are wired POST-merge from live-fetched HTML only (Session 12); PLAB 1 / USMLE Step 1 exam-content links
+> from `build-your-plan` deferred until those exam pages ship.
 
 > Add a row the moment a page is created. One keyword owns one URL (file 03) — confirm no
 > existing row owns a keyword before assigning it.

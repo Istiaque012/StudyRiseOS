@@ -248,3 +248,237 @@ Avoid:        stethoscope-on-keyboard, fake AI glow, stock clichés, GIF.
 
 ### Link-debt / forward-refs
 - `readiness-and-projections` (S7), `analytics-and-reports` (S8), `revision-sprint` (S9) — resolve within Wave 1.
+
+---
+
+# Session 6 PR Notes — Help Center Exam Wave 1
+
+## A) `public/help/exam/plan-and-schedule.html`
+
+**Brief.** Covers the Plan screen (`/plan`) per tutorial §6: the four-way view toggle — List (phase groups, All/Not started/In progress/Completed filter bar with live counts, Manual/Due date/Subject/Hours sort, phase summary strip), Kanban "Board" (drag into Completed to mark done), Timeline (week-by-week, mock lane + per-subject lanes, task/milestone/SR markers, amber heavy-week glow, dashed stop-new-material line, red exam-day line), and Sprint (appears only after activating a Revision Sprint from the Dashboard nudge — linked to the revision-sprint guide, not duplicated). Closes with the task detail drawer: due date, estimated hours, phase, subject, question target, checklist, mark complete with a specific date.
+
+**Outline.** answer lead → #list → #kanban → #timeline → #sprint → #drawer → #faq (4 Q&As).
+
+**Mocks (2, Dr. Sarah Chen, mid-plan).**
+1. `aria-label`: "The Plan screen's List view for Dr. Sarah Chen — a view toggle with List selected next to Board, Timeline; filter chips reading All 96, Not started 41, In progress 3, Completed 52; a sort dropdown set to Due date; a phase summary strip; and Phase 2 tasks including a completed Cardiology task and an in-progress Respiratory task"
+2. `aria-label`: "The task detail drawer for Dr. Sarah Chen's Respiratory task — editable fields for due date 14 Aug 2026, estimated hours 3, phase Phase 2, subject Respiratory, question target 60; a step-by-step checklist with two of four steps ticked; and a Mark complete button with a completion-date field"
+
+**§4 QA checklist.**
+- [x] GA snippet G-R38JK89PP5 present
+- [x] All URLs `https://www.studyrise.app/...`, no bare domain, no trailing slashes
+- [x] Self-referential canonical (`/help/exam/plan-and-schedule`)
+- [x] Sign-up CTAs use `?auth=register` (nav, mobile menu, CTA band, footer)
+- [x] Exactly one `<h1>`
+- [x] Banned words clean (no premium/unlock/free trial/upgrade/seamless/elevate/etc.; trial not mentioned)
+- [x] JSON-LD: TechArticle + BreadcrumbList (4 items ending at page) + HowTo (4 steps mirroring #list/#kanban/#timeline/#drawer with anchor URLs) + FAQPage in exact parity with visible `<details>`
+- [x] Title 51 chars ("Plan Views & Editing Your Schedule | StudyRise Help"); meta description 135 chars
+- [x] Mocks: pure HTML + scoped CSS, no `<img>`/JS, `role="img"` + aria-label, figcaption "Illustration: …", Dr. Sarah Chen persona, no invented UI
+- [x] Sibling box: hub + staying-on-track + subjects-and-tasks + revision-sprint
+
+## B) `public/help/exam/staying-on-track.html`
+
+**Brief.** The "how do I reschedule when I'm behind" page, framed as the coach's calm, no-guilt recovery playbook (tutorial §5 + §4). Covers Backdate and Skip Today on the Today current-task card; Pause on a live block timer re-timing every later block around the interruption; the question-deficit KPI tile and paying it down gradually; rest days as a plan (consistency strip never shades rest red — blue = planned rest) and logging Missed honestly in the Log modal (Complete/Partial slider/Missed/Rest Day); and the overload/burnout amber card from "your study coach" driven by accuracy trend, SR compliance, and missed days — never guilt, just a nudge. Links to daily-study-session and settings (Daily Routine max-tasks cap / rest day).
+
+**Outline.** answer lead → #reschedule → #pause → #deficit → #rest → #coach → #faq (4 Q&As).
+
+**Mocks (2, Dr. Sarah Chen, mid-plan).**
+1. `aria-label`: "Dr. Sarah Chen's Today screen mid-plan — the current task card for a Phase 2 Renal task with Mark Complete, Skip Today, Backdate, and Log buttons, next to a question deficit KPI tile reading 35 questions behind target"
+2. `aria-label`: "Dr. Sarah Chen's Dashboard showing the amber overload note from the study coach — a calm message suggesting easing off after three heavy days, above a consistency strip of colored dots where the planned rest day is blue, not red"
+
+**§4 QA checklist.**
+- [x] GA snippet G-R38JK89PP5 present
+- [x] All URLs `https://www.studyrise.app/...`, no bare domain, no trailing slashes
+- [x] Self-referential canonical (`/help/exam/staying-on-track`)
+- [x] Sign-up CTAs use `?auth=register`
+- [x] Exactly one `<h1>`
+- [x] Banned words clean (trial not mentioned)
+- [x] JSON-LD: TechArticle + BreadcrumbList (4 items) + HowTo (5 steps mirroring #reschedule/#pause/#deficit/#rest/#coach with anchors) + FAQPage in exact parity with `<details>`
+- [x] Title 50 chars ("Falling Behind? How to Reschedule | StudyRise Help"); meta description 151 chars
+- [x] Mocks per rules (HTML+CSS only, role="img", Illustration captions, persona, tutorial-grounded)
+- [x] Sibling box: hub + daily-study-session + plan-and-schedule + settings
+
+**Note.** One soft extrapolation flagged: the deficit tile in mock 1 shows a "Catch-up mode" chip label — decorative copy, not a claimed product feature; everything else is straight from tutorial §4–§6.
+
+---
+
+# Session 7 PR Notes — Help Center Exam Wave 1 (Dashboard + Readiness)
+
+Branch: `content/help-exam-wave1` · Source of truth: `EXAM_MODE_TUTORIAL.md` §4 · Template cloned: `public/help/exam/mock-exams.html`
+
+---
+
+## A) `public/help/exam/dashboard.html`
+
+**Brief.** A guided tour of the Exam Mode Dashboard (`/` route), grouped exactly as the tutorial groups it: time-sensitive banners (T-minus checklist, logistics nudge, finish-setting-up, Revision Sprint nudge [Pro], overload/burnout note), always-on cards (consistency strip, SR due banner, Today's task, six KPI tiles, question-bank first-pass ring, phase bars, Top 3 priorities, AI Study Advisor [Pro]), and the right-hand readiness column — where the three readiness widgets get one line each plus a link to readiness-and-projections rather than duplication. Closes with the phone layout (Today / Progress tabs).
+
+**Outline.** H1 "Your Dashboard — mission control" → answer lead → `#banners` Time-sensitive banners → `#cards` Always-on cards → `#right` The readiness column → `#phone` On your phone → `#faq` (4 Q&As).
+
+**Mocks (3, Dr. Sarah Chen, mid-plan; all `figure.help-mock` > `.hm[role=img]`, figcaption "Illustration:", no img/JS):**
+1. aria-label: "The T-minus exam-day checklist banner showing 6 days to exam for Dr. Sarah Chen, with five checklist items — test-center route confirmed and ID documents ready ticked manually, recent mock completed ticked automatically, no new material and sleep schedule adjusted still open"
+2. aria-label: "Six KPI tiles for Dr. Sarah Chen mid-plan — 62 percent plan tasks completed, 84 percent SR compliance, 1,240 questions done, 61 percent mock average, 6 of 7 days consistency, and a question deficit of 35 — above a consistency strip of seven dots, five green, one blue rest day, one gray, with a 4-day streak"
+3. aria-label: "The Go/No-Go card for Dr. Sarah Chen showing a Pro badge, the verdict you clear the line with a solid margin, a small rising sparkline of recent mock scores, and top weak subjects Renal, Pharmacology, and Biostatistics"
+
+**Sibling box:** hub, readiness-and-projections, daily-study-session, analytics-and-reports.
+
+---
+
+## B) `public/help/exam/readiness-and-projections.html`
+
+**Brief.** Disambiguates the three similarly-named readiness numbers users conflate: the Today's study compliance ring (composite 0–100 of present-tense effort, with sub-bars), the Readiness Projection (calibrated pass-probability forecast from logged mocks via a regression trend line, with confidence band, pass line, margin, trend arrow — described as needing "several" mocks, no exact minimum stated), and the Go/No-Go card (plain-English verdict in the final 35 days, sparkline + weak subjects; "This is part of StudyRise Pro"). Ends with what feeds each number and why honest logging matters; links to mock-exams (breakdown = biggest input) and logging-questions. No formulae fabricated — behaviour only.
+
+**Outline.** H1 "Readiness, projections, and Go/No-Go" → answer lead → comparison card → `#compliance` Compliance ring → `#projection` Readiness Projection → `#gonogo` Go/No-Go → `#feeds` What feeds these numbers → `#faq` (4 Q&As).
+
+**Mocks (3):**
+1. aria-label: "Three readiness numbers side by side for Dr. Sarah Chen — Today's study compliance 78 out of 100 measuring today's effort, Readiness Projection 71 percent pass probability forecasting from mocks, and Go/No-Go showing the verdict Go, a Pro feature in the final 35 days"
+2. aria-label: "Dr. Sarah Chen's Today's study compliance ring at 78 out of 100, with sub-bars showing plan completion 85 percent, SR retention 80 percent, questions 70 percent, and mocks 62 percent"
+3. aria-label: "Dr. Sarah Chen's Readiness Projection chart — a rising blue regression trend line through five mock scores inside a shaded confidence band, crossing a dashed green pass line at 65 percent, with a margin of plus 3 points and a trend arrow reading Improving plus 2 points per week"
+
+**Sibling box:** hub, mock-exams, dashboard, analytics-and-reports.
+
+---
+
+## QA checklist (both pages)
+
+| Check | dashboard | readiness-and-projections |
+|---|---|---|
+| GA G-R38JK89PP5 present | ✅ | ✅ |
+| All URLs www.studyrise.app, no bare domain, no trailing slashes (except root) | ✅ | ✅ |
+| Self-referential canonical | ✅ | ✅ |
+| Sign-up CTAs `?auth=register` (nav, mobile, CTA band, footer) | ✅ | ✅ |
+| Exactly one `<h1>` | ✅ | ✅ |
+| Banned words clean (grep: premium/unlock/free trial/upgrade/seamless/elevate/dive in/in conclusion/worth noting/furthermore/moreover → 0 hits) | ✅ | ✅ |
+| FAQPage JSON-LD exactly mirrors on-page FAQ (4/4) | ✅ | ✅ |
+| HowTo steps mirror sections with anchors (4 steps) | ✅ | ✅ |
+| BreadcrumbList 4 items, matches on-page crumb | ✅ | ✅ |
+| Title ≤60 (51 / 45), meta description ≤155 (146 / 148) | ✅ | ✅ |
+| Mocks: figure.help-mock, role="img" + aria-label, figcaption "Illustration:", no `<img>`, no JS, Dr. Sarah Chen persona, no PII | ✅ | ✅ |
+| Cross-links: dashboard→readiness (readiness column, no duplication); readiness→mock-exams + logging-questions | ✅ | ✅ |
+| Nav/footer shell copied byte-for-byte incl. include markers | ✅ | ✅ |
+| Pro features stated plainly ("This is part of StudyRise Pro."); trial not mentioned | ✅ | ✅ |
+| Facts sourced from EXAM_MODE_TUTORIAL.md §4 only; no invented behaviour | ✅ | ✅ |
+
+**Flags:** tutorial doesn't state an exact mock minimum for the projection — described as "several logged mocks" per instruction. No other gaps.
+
+---
+
+# Session 8 PR Notes — Help Center Exam Wave 1 (history, analytics-and-reports)
+
+## Article A — `public/help/exam/history.html`
+
+**Brief.** Short guide to the History screen (`/history`), per tutorial §10. Positions History as the honest month calendar of the plan: four colour codes (green complete, amber partial, red missed, blue planned rest day), tap-a-day detail (what you studied, questions logged, time spent, SR reviews completed), and its real job — pattern-spotting (missed Wednesdays, dropped-pace weeks). Recovery angle links to staying-on-track. 3 min read.
+
+**Outline.**
+- Answer lead
+- `#calendar` — The month calendar (colour code)
+- `#day-detail` — The day detail (tap a day)
+- `#patterns` — Spotting patterns (→ staying-on-track)
+- `#faq` — 3 Q&As (colours / day detail / what to use it for)
+
+**Mocks (1).**
+1. `History · September 2026` — month grid with colour-coded days + tapped-day detail card. aria-label: "The History month calendar for Dr. Sarah Chen with colour-coded days — mostly green complete days, some amber partial days, red missed days on two Wednesdays, and blue rest-day Fridays — with a detail card for the selected day showing Cardiology study, 45 questions logged, 2 hours 10 minutes spent, and 3 SR reviews completed". Caption starts "Illustration:".
+
+**Sibling box.** hub, staying-on-track, daily-study-session, analytics-and-reports.
+
+## Article B — `public/help/exam/analytics-and-reports.html`
+
+**Brief.** Guide to Analytics (`/analytics`, tutorial §11) and the Progress Report (`/report`, §12). States up front "This is part of StudyRise Pro." Walks the dozen-plus charts as three questions — is the ground work happening (qbank area chart, SR donut, forgetting curves, SR timeline, SR per subject, subject-balance vs blueprint), am I on track to pass (mock trend, pace card, Pass Probability Trajectory, per-subject mocks, confidence-vs-accuracy at ≥5 tagged sessions), where should next week go (Focus Areas, retention map, heatmap) — then the Progress Report's sections, its two entry points, and light-mode-PDF printing. Frames Analytics as a weekly habit. 8 min read.
+
+**Outline.**
+- Answer lead (Pro note, weekly habit)
+- `#groundwork` — Is the ground work happening?
+- `#trajectory` — Am I on track to pass? (→ mock-exams, readiness-and-projections)
+- `#focus` — Where should next week go? (Focus Areas mock)
+- `#report` — The Progress Report (report mock)
+- `#faq` — 4 Q&As (Pro / cadence / confidence chart threshold / save as PDF)
+
+**Mocks (2).**
+1. `Analytics · Focus Areas` — ranked weak subjects with next actions + Print report button. aria-label: "The Analytics Focus Areas panel for Dr. Sarah Chen ranking her three weakest subjects — Renal at 55 percent with a suggested action to schedule an SR review block, Pharmacology at 58 percent with a suggested 40-question practice set, and Endocrine at 61 percent with a suggested revisit of flagged questions — with a Print report button in the header".
+2. `Progress Report` — stacked report sections + Print / Save as PDF button. aria-label: "The Progress Report for Dr. Sarah Chen with a Print / Save as PDF button, overview stats showing 68 study days, 2140 questions logged and a 61 percent mock average, followed by stacked sections for the readiness summary, subject performance table, mock exam history, question-bank first-pass progress, top focus areas, and the 30-day consistency chart".
+
+**Sibling box.** hub, readiness-and-projections, mock-exams, logging-questions.
+
+## QA checklist (both pages)
+
+- [x] GA tag G-R38JK89PP5 present, same snippet as template
+- [x] All URLs `https://www.studyrise.app/...`, no bare domain, no trailing slashes (grep-verified)
+- [x] Self canonical (history / analytics-and-reports), OG/Twitter use shared help-og.webp
+- [x] Sign-up CTAs use `?auth=register`; nav/footer shell copied byte-for-byte incl. include markers
+- [x] Exactly one `<h1>` per page (grep-verified)
+- [x] Banned words absent: premium/unlock/free trial/upgrade(body)/seamless/elevate/let's dive in/in conclusion/it's worth noting/furthermore/moreover (grep-verified; trial sentence used verbatim in analytics Pro FAQ only)
+- [x] JSON-LD: TechArticle + BreadcrumbList (4 items) + HowTo (steps mirror h2 anchors) + FAQPage with exact on-page parity (3 Q&As history, 4 analytics)
+- [x] Title ≤60 chars ("The History Calendar | StudyRise Help" 38; "Analytics & Progress Report | StudyRise Help" 45); meta descriptions ≤155
+- [x] Mocks: `figure.help-mock`, `role="img"` + aria-label, figcaption "Illustration: …", pure HTML + scoped CSS via tokens, no `<img>`/JS in mock, Dr. Sarah Chen mid-plan demo data, no PII
+- [x] Voice: second person, each h2 opens with 40–60 word direct answer then numbered steps; SR and blueprint categories defined on first use
+- [x] Internal links: history → staying-on-track, analytics-and-reports hub siblings; analytics → mock-exams, readiness-and-projections; CTA band → ?auth=register + /features + "Start free — no card required."
+- [x] Product facts sourced only from EXAM_MODE_TUTORIAL.md §10–12; nothing invented
+
+**Missing facts flagged.** None blocking. Notes: (a) tutorial doesn't specify how "partial" vs "complete" days are determined — article describes colours only, no thresholds invented; (b) Focus Areas next-action wording in the mock is illustrative demo copy (tutorial says "a suggested next action" without examples); (c) Progress Report overview-stat labels in the mock are demo data consistent with "overview stats".
+
+---
+
+# Session 9 PR Notes — Help Center Wave 1 (Exam Mode)
+
+## A) `public/help/exam/revision-sprint.html`
+**Brief:** New Pro-feature guide for the Revision Sprint — the weakness-weighted final-month schedule. States "This is part of StudyRise Pro" in the lead and opening paragraph. Covers what the Sprint is (weighted days, built-in mock days, final-3-day taper), the strictly opt-in activation from the Dashboard nudge at ≤28 days ("Activate Sprint" — not from Plan), the Sprint tab appearing in Plan's view toggle pre-built, the Sprint mocks section on Mock Exams (~every 4 days, tapering), and the T-minus exam-day checklist handoff (5 items, three auto-tick, no-new-material auto-checks in final 3 days). Facts sourced from EXAM_MODE_TUTORIAL.md §6, §4, §9.
+
+**Outline:** answer lead → What the Sprint is → Activate it from the Dashboard (+HowTo) → The Sprint schedule → Sprint mocks → The final 7 days: T-minus checklist → FAQ (4).
+
+**Mocks (2), persona Dr. Sarah Chen, mid-plan:**
+1. Dashboard Sprint nudge — aria-label: "The Dashboard Revision Sprint nudge for Dr. Sarah Chen, 26 days from her exam, inviting her to switch to a weakness-weighted revision schedule, with an Activate Sprint button and a Not yet option"
+2. Sprint schedule strip — aria-label: "A Sprint day-by-day schedule strip for Dr. Sarah Chen showing seven days: weakness-weighted revision days for Renal and Endocrine, a scheduled mock day, more weighted revision, then two lighter taper days marked light review before exam day"
+
+## B) `public/help/exam/settings.html`
+**Brief:** Reference "map" article covering all eleven Settings tabs per tutorial §13 — one subsection per tab, each cross-linking to its dedicated guide (build-your-plan, subjects-and-tasks, spaced-repetition, daily-study-session, staying-on-track) rather than duplicating them. Includes Exam Setup's three cards (Question Bank Pools, Exam Day Logistics, feasibility) and "Start a new plan"; Notifications noted free/no-gate; Billing uses the exact mandated trial sentence and avoids "upgrade"; Danger Zone's two type-to-confirm actions; "Take the tour" compass replay button (§3). TechArticle + BreadcrumbList + FAQPage only (no HowTo — reference article, permitted).
+
+**Outline:** answer lead + tour note → Exam Setup → Subjects → Tasks → SR Settings → Daily Routine → Study Plans → Phases → Import/Export → Notifications → Billing → Danger Zone → FAQ (4).
+
+**Mocks (2), persona Dr. Sarah Chen, mid-plan:**
+1. 11-tab strip — aria-label: "The Settings screen's eleven-tab strip — Exam Setup selected, followed by Subjects, Tasks, SR Settings, Daily Routine, Study Plans, Phases, Import/Export, Notifications, Billing, and Danger Zone in red"
+2. Exam Setup panel — aria-label: "The Exam Setup panel for Dr. Sarah Chen showing exam name AMC MCQ, exam date 15 Oct 2026, daily question target 80, and target time per question 72 seconds, with a feasibility chip reading 9 tasks per week — on pace"
+3. (bonus) Daily Routine panel — aria-label: "The Daily Routine panel for Dr. Sarah Chen — daily study hours 4, max tasks per day 2, rest day Friday, with toggles showing prayer times on, work commitments on for Mon to Wed 9 to 5, gym schedule off, and shift work off"
+
+## QA checklist (both pages)
+- [x] GA tag G-R38JK89PP5 present
+- [x] All URLs `https://www.studyrise.app/...` — grep confirmed zero bare-domain links, no trailing slashes
+- [x] Self canonical (revision-sprint / settings)
+- [x] Auth CTAs use `?auth=register` / `?auth=login` only — no /register, /login paths
+- [x] Exactly one `<h1>` per page (grep -c = 1 each)
+- [x] Banned words — grep for premium/unlock/free trial/upgrade/seamless/elevate/let's dive in/in conclusion/it's worth noting/furthermore/moreover: zero hits
+- [x] JSON-LD: revision-sprint = TechArticle + BreadcrumbList (4 items) + HowTo + FAQPage; settings = TechArticle + BreadcrumbList (4 items) + FAQPage. FAQPage answers match on-page FAQ verbatim
+- [x] Title ≤60 (37 / 42 chars); meta description ≤155 (both ~150)
+- [x] Mocks: `figure.help-mock` + `role="img"` + aria-label, pure HTML+scoped CSS, no `<img>`, no JS, figcaptions start "Illustration:", demo data, no PII
+- [x] Nav + footer shell copied byte-for-byte incl. `<!--#include-->` / `<!--shell:*-->` markers
+- [x] Sibling boxes: sprint → hub/plan-and-schedule/mock-exams/dashboard; settings → hub/subjects-and-tasks/spaced-repetition/staying-on-track
+- [x] Billing trial sentence used verbatim; Sprint declared Pro early; facts confined to EXAM_MODE_TUTORIAL.md §§3, 4, 6, 9, 13, 14
+
+## Missing facts flagged
+- Sprint mock illustration uses invented but plausible demo day labels (subject names, day numbers) — tutorial doesn't specify Sprint-view visuals.
+- Tutorial doesn't say whether a Sprint can be deactivated/paused once active — not claimed on the page.
+
+---
+
+## Page: `/help/exam/faq` (Session 10)
+
+**Brief:** curated top-of-mind Exam Mode FAQ — 7 Q&As (card to start / exam not listed / missed day / data safety on reset vs new plan / which features are Pro / three readiness numbers / replay the tour), each linking to its full article. Text page, no mocks.
+
+### §4 QA gate — PASS
+- GA `G-R38JK89PP5` ✓ · all URLs www, self canonical ✓ · `?auth=register` CTAs ✓ · one `<h1>` ✓
+- Banned words: none; compliant trial sentence used verbatim in Q1 ✓
+- TechArticle + BreadcrumbList(4) + FAQPage with exact schema↔visible parity (7/7) ✓
+- Title 32 chars; meta ≤155 ✓ · siblings: hub + getting-started + staying-on-track + readiness ✓
+
+### Session 10 — sitemap & hub finalization
+- `sitemap.xml`: all 18 help URLs added (home, hub, 16 pages) with `help-og.webp` image entries, lastmod 2026-07-02. XML validated.
+- Hub `/help/exam`: re-grouped to all six §3 headings; hasPart now lists all 15 articles; lede updated.
+- Help home: most-read expanded (getting-started, staying-on-track, readiness-and-projections, faq, hub).
+- `python3 build_site.py` green (help pages not flagged by check_blog).
+
+---
+
+## Session 11 — merge-gate summary
+
+- All 18 pages pass the §4 gate (per-page checklists above); build green.
+- Illustrations: all HTML/CSS mocks per plan §6 (no screenshots). **Outstanding asset: `public/help/images/help-og.webp`** — Istiaque generates from the §6.3 ChatGPT prompt; every page already references it. This is the ONLY missing asset (pages 404 the OG image until it's added — acceptable pre-merge, must be in place by Session 12 step 6).
+- Forward-reference/link debt: PLAB 1 + USMLE Step 1 exam-content links (build-your-plan) deferred; inbound links from /features and /blog/amc-mcq-study-plan wired post-merge (S12); /contact page status unconfirmed (help pages link to it).
+- vercel.json /help rewrites present, catch-all last (S0).
+- Agent-flagged notes: "Catch-up mode" chip and deficit-recovery pacing (staying-on-track) are coaching copy, not claimed app behaviour; Sprint-mock day labels are demo data; no exact mock minimum stated for the Readiness Projection (tutorial silent).

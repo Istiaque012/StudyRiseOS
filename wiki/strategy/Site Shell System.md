@@ -42,6 +42,21 @@ default rule.
 ## Page-Type Recipes
 Each page type (marketing, blog article, blog listing, segment landing) has a defined structure. See source for full recipes.
 
+### Article shell — symmetric 3-column + sticky rail (2026-07-03, PR #68 + #73)
+Blog and Help Center articles (`.art-wrap` in `studyrise-core.css`) now render as a 3-column
+grid — `200px` TOC | `minmax(0,1fr)` content (~620px, ~64-char measure) | `216px` sticky right
+rail — instead of the old lopsided `210px 1fr` two-column layout that left dead space on the
+right and put the body's left edge out of step with the centered 760px hero above it. The rail
+holds a "Continue reading" list (sourced from the page's own `.related`/`.sib` block — no new
+data) plus a compact CTA card, and is `position:sticky` like the TOC. Responsive ladder: **≤960px**
+(lowered from an initial 1080px after real-device testing in PR #73) drops the rail → 2-column;
+**≤920px** collapses to single-column with the TOC static, matching the 760px hero width. This is
+a **durable rule**, not a one-off: every new blog/help article must include the
+`<aside class="rail">…</aside>` markup (3rd `.art-wrap` grid child) — the copy-paste skeleton
+lives in the App repo's `docs/dev-os/static-site-notes.md`. Applies to all 21 existing article
+pages (5 blog + 16 [[Help Center]] articles); marketing pages (`.wrap`, symmetric already) are
+untouched.
+
 ## Component & Token Inventory
 Full appendix of all available tokens and components in the shell system.
 

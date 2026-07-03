@@ -228,3 +228,57 @@ risk with no upside. Deleted all four root files. Updated [[Site Shell System]] 
 described the old re-upload pattern, redirecting to "read live from the App repo" instead.
 No wiki page content (beyond Site Shell System's note) needed changes. Website: no changes —
 this was Content OS documentation/cleanup only.
+
+## [2026-07-03] audit | Cross-repo bug-history review — 1 confirmed live data-loss bug, 2 confirmed live security gaps | (read-only — no wiki pages changed)
+User asked to analyse bug history for anything still unfixed. Read App repo's
+`docs/dev-os/bug-history.md` (the fixed-bugs log, referenced from [[Feature Flags Registry]]),
+cross-referenced against `system-os/18_KNOWN_ISSUES_AND_TECH_DEBT.md` and
+`docs/dev-os/remaining-work.md` (the unfixed backlog), then verified the top findings against
+live source rather than trusting the docs — this repo has its own documented history of "still
+open" lists going stale (the 2026-07-02 `remaining-work.md` doc-drift incident). Confirmed still
+live in code: **G-D1** `audit_log` schema mismatch — `supabase/add_audit_log.sql` creates the
+admin-shape table (`actor_email`/`action`) but `src/lib/audit.js:22-32` inserts the per-user
+shape (`user_id`/`event_type`/...); every `logEvent()` call fails and is silently swallowed
+(try/catch → `console.warn` only) — the user-facing audit trail has been silently no-op-ing.
+**G-S2** iCal SSRF — `api/ical-fetch.js:127` still `redirect:'follow'`, allowlist only checks
+the initial URL. **G-S1** OTP verify — `api/verify-otp.js` has no failed-attempt lockout, only
+a send-rate cap. Also confirmed still-open-by-design: dashboard double-mount on route
+transitions (logged as non-user-facing, deliberately deferred), T-minus/sprint banner cards'
+`var(--navy)`-as-background dark-mode contrast bug (explicitly left untouched), no branch
+protection on `main` (accepted risk, private free-tier repo). Confirmed NOT a bug: the
+"expired-trial-reads-as-broken" QA report — paywall enforcement is working as designed, owner
+kept it. No wiki pages required changes — this was a read-only cross-repo audit; findings
+reported directly to the user in-session, not filed as a new page (no synthesis beyond what
+the App-repo docs already state).
+
+## [2026-07-03] fix+strategy | Synced wiki against App repo PRs #67, #68, #69, #71, #73 (untracked since PR #65) | wiki/app-dev/Feature Flags Registry.md, wiki/strategy/SEO Remediation 2026-06.md, wiki/strategy/SEO Strategy.md, wiki/strategy/Site Shell System.md, wiki/content/Article Production Playbook.md, wiki/content/Help Center.md, wiki/index.md
+App repo (`StudyRise App`) had shipped 6 PRs since the last wiki sync (#65) that the wiki hadn't
+absorbed yet — found via `gh pr list --state merged` + `git log`/`git show` on each. The prior
+log entry (root-shell-duplicate cleanup) had already *noticed* two of these in passing; this pass
+did the actual content synthesis:
+- **PR #67** (fix): Settings → Help & Support "Guides & tutorials" button was dead-linking to a
+  pre-Help-Center placeholder (`studyrise.app/guides`, never built) — reconnected mode-aware to
+  `/help/exam` (Exam) / `/help` (Uni/MBBS). Updated [[Help Center]] status + distinguished it from
+  the still-open "contextual deep links" follow-up.
+- **PR #68 + #73** (refactor): symmetric 3-column article layout + sticky "Continue reading" rail
+  replaced the old lopsided 2-column shell across all 21 blog/help articles; breakpoint corrected
+  1080px→960px in the same-day follow-up. Added as a durable recipe to [[Site Shell System]] and
+  a required build-step to [[Article Production Playbook]] Phase 5 (the `<aside class="rail">`
+  markup is now mandatory on new articles, not optional). Noted on [[Help Center]].
+- **PR #69** (docs, no code change): confirmed **⚠️ CONTRADICTION** — [[Feature Flags Registry]]
+  said the subscription master switch was OFF (everything free) as of 2026-06-25; it's been **ON
+  in prod since 2026-06-14**. Corrected the page in place (flagged per schema rule) with the real
+  enforcement mechanics (what's Free-gated vs. never-gated, `FREE_UNIT_CAP=2` not 3, no self-serve
+  upgrade path yet since payments aren't live).
+- **PR #71** (fix): the `/?auth=login`/`/?auth=register` "SEO Remediation #5" fix from 2026-06-25
+  (a noindex tag) turned out insufficient — Google had already indexed `/?auth=register` on an
+  earlier crawl and 33 internal links still pointed at the query-string form, reinforcing it.
+  Reopened and corrected in [[SEO Remediation 2026-06]] (status cell + full note), and generalized
+  the lesson into [[SEO Strategy]]'s Active Remediation section: noindex/canonical are hints
+  Google can override — real duplicates need a hard 301 plus repointed internal links.
+- **PR #70** (CI-only: dummy Supabase env vars + Node 20→22 bump for `npm test`): reviewed, no
+  wiki page touches — pure CI/test-infra hygiene with no content/SEO/architecture-strategy
+  surface; this log entry is the only record.
+- Refreshed the stale [[Help Center]] one-liner in `wiki/index.md` ("PR pending merge" → live).
+Website: no changes — all 6 PRs were already merged to `main` before this sync; this was a
+wiki-side catch-up only.

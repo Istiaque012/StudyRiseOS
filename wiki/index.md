@@ -1,6 +1,6 @@
 ---
 title: Wiki Index
-updated: 2026-07-01
+updated: 2026-07-03
 ---
 
 # Wiki Index
@@ -41,7 +41,7 @@ updated: 2026-07-01
 - [[SEO Technical Checklist]] — GA snippet, canonical, OG tags, JSON-LD schemas, Core Web Vitals targets
 - [[Pre-Deploy Checklist]] — Last gate: page served check, technical gate, AI-readability, sitemap, GSC
 - [[Audit Playbook]] — Monthly health check, AI-visibility check, targeted on-demand audits
-- [[Help Center]] — Product docs at /help/* (help ≠ blog); Exam Wave 1: 18 pages, full Exam Mode coverage, PR pending merge
+- [[Help Center]] — Product docs at /help/* (help ≠ blog); Exam Wave 1 live (18 pages), in-app entry point reconnected, symmetric 3-col article layout
 
 ## App Development
 

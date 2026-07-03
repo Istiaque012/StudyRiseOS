@@ -3,7 +3,7 @@ title: SEO Remediation 2026-06
 type: strategy
 sources: [raw/app-dev-sources/SEO-Remediation-2026-06-24.md]
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-03
 ---
 
 # SEO Remediation 2026-06
@@ -22,7 +22,7 @@ Live-site SEO audit of `https://www.studyrise.app/` (audit date 2026-06-24, GSC 
 | 2 | `/amc-mcq-study-planner` ghost page | **P0** | CONTENT + DEV | ✅ done — already out of sitemap; removed stale dead rewrite from `vercel.json` |
 | 3 | Homepage FAQ contradicts the freemium model + no FAQPage schema | **P1** | CONTENT | ✅ done — FAQ answer rewritten + `FAQPage` JSON-LD added |
 | 4 | `/study-planner` missing from sitemap | **P1** | CONTENT + DEV | ✅ done — built the page (nav/footer/robots already referenced it), wired rewrite, added to sitemap |
-| 5 | `/?auth=login` is indexed | **P1** | DEV | ✅ already handled — `X-Robots-Tag: noindex,nofollow` on `/?auth` in `vercel.json` |
+| 5 | `/?auth=login` is indexed | **P1** | DEV | ⚠️ reopened 2026-07-03, then ✅ fixed properly — noindex tag alone wasn't enough; see note below |
 | 6 | Homepage meta description is ungrammatical | **P2** | CONTENT | ✅ done |
 | 7 | Em-dashes/colons stripped in `landing.html` | **P2** | CONTENT | ✅ done — hero lede, two feature blurbs, import FAQ re-punctuated |
 | 8 | Homepage favicon relative path | **P2** | DEV | ✅ done — made absolute; bare-domain URLs already 308 → monitor |
@@ -53,6 +53,22 @@ Listed in `sitemap.xml` at priority `0.8` with its own OG image, but serves the 
 
 ### #5 `/?auth=login` indexed (DEV)
 Login entry point indexed (**27 impressions, 1 click**), competing in own SERPs. `robots.txt` blocks `/login`+`/register` but the `?auth=` query-param form on `/` is treated as separate. Fix: `?auth=` variants should canonicalise to `/` rather than self-reference.
+
+**⚠️ Reopened 2026-07-03 — the original fix (noindex tag) wasn't sufficient.** GSC showed
+`/?auth=register` still "Submitted and indexed," with **Google self-canonicalizing to the
+query-string URL** despite the declared canonical and the noindex header both being live and
+correct. Two compounding causes: (1) the noindex fix (`b9edcb5`, 2026-06-25) postdated Google's
+last crawl of that URL (2026-06-10) — no recrawl had happened yet; (2) 33 files across the site
+(nav/footer partials, every blog/help article's rail-CTA, `landing.html`, the React
+`Marketing*.jsx` chrome) still linked *directly* to `/?auth=login`/`/?auth=register`, reinforcing
+the duplicate as a real destination. **Lesson: `noindex`/`canonical` are hints Google can
+override, especially when internal links keep pointing at the "wrong" URL — for a true
+duplicate, use a hard 301 redirect instead, and repoint every internal link at the canonical
+target.** Actually fixed 2026-07-03 (App PR #71 — full writeup in `docs/dev-os/bug-history.md`
+"`/?auth=register` indexed by Google as its own SEO page despite a noindex tag"): `vercel.json`
+now 301s `/?auth=register` → `/register` and any other `/?auth=*` → `/login`; all 33 internal
+links repointed to the clean paths. Applies to [[SEO Strategy]]'s "Active Remediation" lesson
+going forward.
 
 ## P2 — Polish
 

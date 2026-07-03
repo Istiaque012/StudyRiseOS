@@ -3,7 +3,7 @@ title: Help Center
 type: content
 sources: [raw/brain-v1/13_HELP_CENTER.md, EXAM_HELP_CENTER_BUILD_PLAN.md, raw/brain-v1/12_INTERNAL_LINKS.md, raw/brain-v1/05_CONTENT_PIPELINE.md]
 created: 2026-07-02
-updated: 2026-07-02
+updated: 2026-07-03
 ---
 
 # Help Center
@@ -57,8 +57,22 @@ it automatically.
 + help) now have **byte-identical** nav and footer matching `landing.html`, and the React legal
 pages (`/privacy`, `/terms`) synced via `MarketingNav.jsx`/`MarketingFooter.jsx`. This fixed prior
 drift (4 nav / 5 footer variants) and made the Help Center footer link a structural default, not a
-per-page edit. Canonical menu now includes **Study Planner** (shipped). **Open:** (1) GSC "Request Indexing" is a manual UI click (no public API);
-(2) in-app contextual links (Exam Mode UI → relevant article) remain a follow-up in the app UI;
+per-page edit. Canonical menu now includes **Study Planner** (shipped).
+
+**In-app entry point reconnected (PR #67, 2026-07-03):** Settings → Help & Support → "Guides &
+tutorials" had pointed at `https://studyrise.app/guides` since before the Help Center existed —
+a placeholder that 404'd, never updated once the real Help Center shipped in #61/#62. Now
+mode-aware: Exam → `/help/exam` (live guides), University/MBBS → `/help` (hub, honest "coming
+soon" card for those modes instead of a 404). This is the *general* Settings entry point, distinct
+from per-screen contextual deep links (below).
+
+**Article layout unified with the rest of the site (PR #68 + #73, 2026-07-03):** all 16 Exam
+help articles now use the symmetric 3-column shell + sticky "Continue reading" rail — see
+[[Site Shell System]] § Article shell. Purely presentational; no content or schema changes.
+
+**Open:** (1) GSC "Request Indexing" is a manual UI click (no public API);
+(2) in-app **contextual** deep links (Exam Mode UI → the specific relevant article, as opposed to
+the general Settings button fixed in PR #67) remain a follow-up in the app UI;
 (3) header nav intentionally left marketing-only. Wave 4 = MBBS help; Wave 5 = University help.
 
 ## Sources

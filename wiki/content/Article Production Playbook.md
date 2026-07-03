@@ -3,7 +3,7 @@ title: Article Production Playbook
 type: content
 sources: [raw/brain-v1/06_PRODUCTION_PLAYBOOK.md]
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-07-03
 ---
 
 # Article Production Playbook
@@ -30,6 +30,11 @@ Produce complete HTML using the article template from [[Site Shell System]]:
 - JSON-LD BlogPosting + FAQPage schema
 - OG/Twitter meta tags
 - Canonical URL with www
+- Internal CTA links use the clean paths (`/login`, `/register`) — never `/?auth=login` or
+  `/?auth=register`; see [[SEO Strategy]] 2026-07-03 addendum
+- `<aside class="rail">…</aside>` sticky right-rail markup per the symmetric 3-column article
+  shell (see [[Site Shell System]] § Article shell, 2026-07-03) — required on every new article,
+  not optional
 
 ## After Building
 1. Run [[SEO Technical Checklist]]
